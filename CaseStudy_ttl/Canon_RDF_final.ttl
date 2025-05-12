@@ -1,0 +1,217 @@
+@prefix : <https://ontology.golemlab.eu/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix gc: <https://ontology.golemlab.eu/> .
+@prefix dlp: <http://www.ontologydesignpatterns.org/ont/dlp/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix golem: <https://golemlab.eu/graph/> .
+@prefix schema: <https://schema.org/> .
+@prefix lrm: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix gd: <https://data.golemlab.eu/entity/> .
+@prefix gt: <https://data.golemlab.eu/entity/type/> .
+@base <https://ontology.golemlab.eu/> .
+
+### Canon Work
+gd:W000019018 a lrm:F1 ;
+    crm:P130_shows_features_of gd:F000001765 ;
+    crm:P2_has_type gt:T0000000013 ;
+    schema:title "Homeric Iliad (Canon)" .
+
+### Canon Characters (using existing Stoff entities)
+gd:C000000264 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Hector (Ancient Greek Religion & Lore)"@en .
+
+gd:C000000266 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Achilles (Ancient Greek Religion & Lore)"@en .
+
+### Hector's Canon Features
+gd:W000019018.CF00000001 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "prince of Troy"@en ;
+    gc:GP0i_is_feature_of gd:W000019018.C000000280 .
+
+gd:W000019018.CF00000002 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "greatest Trojan warrior"@en ;
+    gc:GP0i_is_feature_of gd:W000019018.C000000280 .
+
+gd:W000019018.CF00000005 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "tall and strong"@en ;
+    gc:GP0i_is_feature_of gd:W000019018.C000000280 .
+
+gd:W000019018.CF00000006 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "wears shining armor"@en ;
+    gc:GP0i_is_feature_of gd:W000019018.C000000280 .
+
+gd:W000019018.CF00000007 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "noble"@en ;
+    gc:GP0i_is_feature_of gd:W000019018.C000000280 .
+
+gd:W000019018.CF00000008 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "dutiful"@en ;
+    gc:GP0i_is_feature_of gd:W000019018.C000000280 .
+
+gd:W000019018.CF00000009 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "brave"@en ;
+    gc:GP0i_is_feature_of gd:W000019018.C000000280 .
+
+### Achilles' Canon Features (with lowercase non-proper nouns)
+gd:W000019018.CF00000010 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "greatest Greek warrior"@en ;
+    gc:GP0i_is_feature_of gd:W000019018.C000000281 .
+
+gd:W000019018.CF00000012 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "leader of the Myrmidons"@en ;
+    gc:GP0i_is_feature_of gd:W000019018.C000000281 .
+
+gd:W000019018.CF00000013 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "blonde hair"@en ;
+    gc:GP0i_is_feature_of gd:W000019018.C000000281 .
+
+gd:W000019018.CF00000014 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "swift-footed"@en ;
+    gc:GP0i_is_feature_of gd:W000019018.C000000281 .
+
+gd:W000019018.CF00000015 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "proud"@en ;
+    gc:GP0i_is_feature_of gd:W000019018.C000000281 .
+
+gd:W000019018.CF00000016 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "wrathful"@en ;
+    gc:GP0i_is_feature_of gd:W000019018.C000000281 .
+
+gd:W000019018.CF00000017 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "loyal to Patroclus"@en ;
+    gc:GP0i_is_feature_of gd:W000019018.C000000281 .
+
+### Canon Narrative Events
+gd:W000019018.NE00000001 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Hector kills Patroclus"@en .
+
+gd:W000019018.NE00000002 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Achilles kills Hector in revenge"@en .
+
+gd:W000019018.NE00000003 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Achilles drags Hector's body behind his chariot"@en .
+
+gd:W000019018.NE00000004 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Achilles is killed by Paris' arrow guided by Apollo"@en .
+
+### Canon Narrative Sequences
+gd:W000019018.NS00000001 a gc:G7_Narrative_Sequence ;
+    dlp:sequences gd:W000019018.NE00000001,
+        gd:W000019018.NE00000002,
+        gd:W000019018.NE00000003 ;
+    skos:prefLabel "Hector's death and aftermath"@en .
+
+gd:W000019018.NS00000002 a gc:G7_Narrative_Sequence ;
+    dlp:sequences gd:W000019018.NE00000004 ;
+    skos:prefLabel "Achilles' death"@en .
+
+### Canon Relationships
+gd:W000019018.SR00000001 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000009 ;
+    dlp:involves gd:W000019018.C000000280,
+        gd:W000019018.C000000274 ;
+    skos:prefLabel "Hector brother of Paris"@en .
+
+gd:W000019018.SR00000002 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000015 ;
+    dlp:involves gd:W000019018.C000000281,
+        gd:W000019018.C000000279 ;
+    skos:prefLabel "Achilles companion of Patroclus"@en .
+
+gd:W000019018.SR00000003 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000009 ;
+    dlp:involves gd:W000019018.C000000280,
+        gd:W000019018.C000000274 ;
+    skos:prefLabel "Paris brother of Hector"@en .
+
+gd:W000019018.SR00000004 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000015 ;
+    dlp:involves gd:W000019018.C000000281,
+        gd:W000019018.C000000279 ;
+    skos:prefLabel "Patroclus companion of Achilles"@en .
+
+### Character Instances (updated to use existing Stoff entities)
+gd:W000019018.C000000280 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000264 ;  # Using existing Hector Stoff
+    crm:P2_has_type gt:T0000000015 ;
+    skos:prefLabel "Hector"@en ;
+    gc:GP0_has_feature gd:W000019018.CF00000001,
+        gd:W000019018.CF00000002,
+        gd:W000019018.CF00000003,
+        gd:W000019018.CF00000004,
+        gd:W000019018.CF00000005,
+        gd:W000019018.CF00000006,
+        gd:W000019018.CF00000007,
+        gd:W000019018.CF00000008,
+        gd:W000019018.CF00000009 ;
+    gc:GP1_is_character_in gd:W000019018 .
+
+gd:W000019018.C000000281 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000266 ;  # Using existing Achilles Stoff
+    crm:P2_has_type gt:T0000000015 ;
+    skos:prefLabel "Achilles"@en ;
+    gc:GP0_has_feature gd:W000019018.CF00000010,
+        gd:W000019018.CF00000011,
+        gd:W000019018.CF00000012,
+        gd:W000019018.CF00000013,
+        gd:W000019018.CF00000014,
+        gd:W000019018.CF00000015,
+        gd:W000019018.CF00000016,
+        gd:W000019018.CF00000017 ;
+    gc:GP1_is_character_in gd:W000019018 .
+
+### Create Patroclus character instance
+gd:W000019018.C000000279 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000279 ;  # Using existing Patroclus Stoff
+    crm:P2_has_type gt:T0000000015 ;
+    skos:prefLabel "Patroclus"@en ;
+    gc:GP1_is_character_in gd:W000019018 .
+
+### Create Paris character instance
+gd:W000019018.C000000274 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000274 ;  # Using existing Paris Stoff
+    crm:P2_has_type gt:T0000000015 ;
+    skos:prefLabel "Paris"@en ;
+    gc:GP1_is_character_in gd:W000019018 .
+
+### Connect characters to narrative events with their roles
+# Hector kills Patroclus
+gd:W000019018.C000000280 dlp:participant-in gd:W000019018.NE00000001 ;
+    dlp:plays gd:NR00000002 .  # Hector as killer
+
+gd:W000019018.C000000279 dlp:participant-in gd:W000019018.NE00000001 ;
+    dlp:plays gd:NR00000001 .  # Patroclus as victim
+
+# Achilles kills Hector in revenge
+gd:W000019018.C000000281 dlp:participant-in gd:W000019018.NE00000002 ;
+    dlp:plays gd:NR00000002 .       # Achilles as killer
+
+gd:W000019018.C000000280 dlp:participant-in gd:W000019018.NE00000002 ;
+    dlp:plays gd:NR00000001 .  # Hector as victim
+
+# Achilles is killed by Paris
+gd:W000019018.C000000274 dlp:participant-in gd:W000019018.NE00000004 ;
+    dlp:plays gd:NR00000002 .        # Paris as betrayer (shooting from hiding)
+
+gd:W000019018.C000000281 dlp:participant-in gd:W000019018.NE00000004 ;
+    dlp:plays gd:NR00000001 .  # Achilles as victim

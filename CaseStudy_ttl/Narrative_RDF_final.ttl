@@ -1,0 +1,233 @@
+@prefix dlp: <http://www.ontologydesignpatterns.org/ont/dlp/> .
+@prefix gc: <https://ontology.golemlab.eu/> .
+@prefix gd: <https://data.golemlab.eu/entity/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+gd:W000019008.C000000254 dlp:participant-in gd:W000019008.NE00000003,
+        gd:W000019008.NE00000004 ;
+    dlp:plays gd:NR00000001 .
+
+gd:W000019008.C000000255 dlp:participant-in gd:W000019008.NE00000001 .
+
+gd:W000019008.C000000256 dlp:participant-in gd:W000019008.NE00000002 ;
+    dlp:plays gd:NR00000002 .
+
+gd:W000019008.C000000257 dlp:participant-in gd:W000019008.NE00000003 ;
+    dlp:plays gd:NR00000002 .
+
+gd:W000019008.NS00000001 a gc:G7_Narrative_Sequence ;
+    dlp:sequences gd:W000019008.NE00000001 ;
+    skos:prefLabel "Eurydice's death and descent"@en .
+
+gd:W000019008.NS00000002 a gc:G7_Narrative_Sequence ;
+    dlp:sequences gd:W000019008.NE00000002,
+        gd:W000019008.NE00000003,
+        gd:W000019008.NE00000004 ;
+    skos:prefLabel "Killing of Orpheus by the Maenads"@en .
+
+gd:W000019009.C000000258 dlp:participant-in gd:W000019009.NE00000001 ;
+    dlp:plays gd:NR00000001 .
+
+gd:W000019009.C000000259 dlp:participant-in gd:W000019009.NE00000001,
+        gd:W000019009.NE00000002 ;
+    dlp:plays gd:NR00000002 .
+
+gd:W000019009.NS00000001 a gc:G7_Narrative_Sequence ;
+    dlp:sequences gd:W000019009.NE00000001,
+        gd:W000019009.NE00000002 ;
+    skos:prefLabel "Cassandra's death in the palace"@en .
+
+gd:W000019010.C000000260 dlp:participant-in gd:W000019010.NE00000001 ;
+    dlp:plays gd:NR00000001 .
+
+gd:W000019010.C000000262 dlp:participant-in gd:W000019010.NE00000002 ;
+    dlp:plays gd:NR00000002 .
+
+gd:W000019010.NS00000001 a gc:G7_Narrative_Sequence ;
+    dlp:sequences gd:W000019010.NE00000001,
+        gd:W000019010.NE00000002 ;
+    skos:prefLabel "Zeus's threat to Persephone"@en .
+
+gd:W000019011.C000000263 dlp:participant-in gd:W000019011.NE00000001 ;
+    dlp:plays gd:NR00000002 .
+
+gd:W000019011.C000000274 dlp:participant-in gd:W000019011.NE00000001,
+        gd:W000019011.NE00000002 ;
+    dlp:plays gd:NR00000001 .
+
+gd:W000019011.NS00000001 a gc:G7_Narrative_Sequence ;
+    dlp:sequences gd:W000019011.NE00000001,
+        gd:W000019011.NE00000002 ;
+    skos:prefLabel "Paris's death and Oenone's rejection"@en .
+
+gd:W000019012.C000000264 dlp:participant-in gd:W000019012.NE00000001,
+        gd:W000019012.NE00000002 ;
+    dlp:plays gd:NR00000001 .
+
+gd:W000019012.C000000266 dlp:participant-in gd:W000019012.NE00000001,
+        gd:W000019012.NE00000002 ;
+    dlp:plays gd:NR00000002 .
+
+gd:W000019012.NS00000001 a gc:G7_Narrative_Sequence ;
+    dlp:sequences gd:W000019012.NE00000001,
+        gd:W000019012.NE00000002 ;
+    skos:prefLabel "Hector's death in battle"@en .
+
+gd:W000019013.C000000267 dlp:participant-in gd:W000019013.NE00000001 ;
+    dlp:plays gd:NR00000001 .
+
+gd:W000019013.C000000268 dlp:participant-in gd:W000019013.NE00000001 ;
+    dlp:plays gd:NR00000002 .
+
+gd:W000019013.C000000269 dlp:participant-in gd:W000019013.NE00000002 ;
+    dlp:plays gd:NR00000001 .
+
+gd:W000019013.C000000271 dlp:participant-in gd:W000019013.NE00000002 ;
+    dlp:plays gd:NR00000002 .
+
+gd:W000019013.NS00000001 a gc:G7_Narrative_Sequence ;
+    dlp:sequences gd:W000019013.NE00000001 ;
+    skos:prefLabel "Myrrha's transformation and death"@en .
+
+gd:W000019013.NS00000002 a gc:G7_Narrative_Sequence ;
+    dlp:sequences gd:W000019013.NE00000002 ;
+    skos:prefLabel "Adonis's death by the boar"@en .
+
+gd:W000019014.C000000262 dlp:participant-in gd:W000019014.NE00000001 ;
+    dlp:plays gd:NR00000002 .
+
+gd:W000019014.C000000272 dlp:participant-in gd:W000019014.NE00000001 ;
+    dlp:plays gd:NR00000001 .
+
+gd:W000019014.NS00000001 a gc:G7_Narrative_Sequence ;
+    dlp:sequences gd:W000019014.NE00000001 ;
+    skos:prefLabel "Semele's death by Zeus's lightning"@en .
+
+gd:W000019015.C000000273 dlp:participant-in gd:W000019015.NE00000001,
+        gd:W000019015.NE00000002 ;
+    dlp:plays gd:NR00000001 .
+
+gd:W000019015.C000000275 dlp:participant-in gd:W000019015.NE00000002 .
+
+gd:W000019015.NS00000001 a gc:G7_Narrative_Sequence ;
+    dlp:sequences gd:W000019015.NE00000001,
+        gd:W000019015.NE00000002 ;
+    skos:prefLabel "Leuce's death and transformation"@en .
+
+gd:W000019016.C000000278 dlp:participant-in gd:W000019016.NE00000001,
+        gd:W000019016.NE00000002 ;
+    dlp:plays gd:NR00000001,
+        gd:NR00000002 .
+
+gd:W000019016.NS00000001 a gc:G7_Narrative_Sequence ;
+    dlp:sequences gd:W000019016.NE00000001,
+        gd:W000019016.NE00000002 ;
+    skos:prefLabel "Ajax's suicide"@en .
+
+gd:W000019017.C000000264 dlp:participant-in gd:W000019017.NE00000001,
+        gd:W000019017.NE00000003 ;
+    dlp:plays gd:NR00000001,
+        gd:NR00000002 .
+
+gd:W000019017.C000000266 dlp:participant-in gd:W000019017.NE00000003 ;
+    dlp:plays gd:NR00000002 .
+
+gd:W000019017.C000000279 dlp:participant-in gd:W000019017.NE00000001 ;
+    dlp:plays gd:NR00000001 .
+
+gd:W000019017.NS00000001 a gc:G7_Narrative_Sequence ;
+    dlp:sequences gd:W000019017.NE00000001,
+        gd:W000019017.NE00000002 ;
+    skos:prefLabel "Patroclus's death"@en .
+
+gd:W000019017.NS00000002 a gc:G7_Narrative_Sequence ;
+    dlp:sequences gd:W000019017.NE00000003 ;
+    skos:prefLabel "Hector's death in battle"@en .
+
+gd:W000019017.NE00000002 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Achilles' rage."@en .
+
+gd:W000019008.NE00000001 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Eurydice died from a snakebite and descended to the underworld."@en .
+
+gd:W000019008.NE00000002 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Dionysus ordered the Maenads to tear Orpheus to pieces."@en .
+
+gd:W000019008.NE00000004 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Orpheus, thinking of his lover in the underworld, did not struggle."@en .
+
+gd:W000019009.NE00000002 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Clytaemnestra's rage fueled by Agamemnon's betrayal and Helen's absence."@en .
+
+gd:W000019010.NE00000001 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Persephone plans to walk to the edge of the world to kill herself."@en .
+
+gd:W000019010.NE00000002 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Zeus declares Persephone must be 'humbled' for her actions."@en .
+
+gd:W000019011.NE00000002 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Paris is wounded in battle and seeks Oenone's help."@en .
+
+gd:W000019015.NE00000001 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Leuce is dying"@en .
+
+gd:W000019016.NE00000001 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Ajax was dishonored by the Greek army."@en .
+
+gd:W000019016.NE00000002 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Ajax kills himself"@en .
+
+gd:W000019008.NE00000003 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Maenads attacked Orpheus in a frenzy."@en .
+
+gd:W000019009.NE00000001 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Clytaemnestra dragged Cassandra against the wall, cracking her skull."@en .
+
+gd:W000019011.NE00000001 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Oenone refuses to heal Paris, leaving him to die from his wounds."@en .
+
+gd:W000019012.NE00000001 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Achilles strikes Hector down in battle."@en .
+
+gd:W000019012.NE00000002 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Achilles drags Hector's corpse behind his chariot."@en .
+
+gd:W000019013.NE00000001 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Myrrha flees from Cinyras and is transformed into a myrrh tree."@en .
+
+gd:W000019013.NE00000002 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Adonis is gored by a wild boar while hunting."@en .
+
+gd:W000019014.NE00000001 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Zeus's divine lightning strikes Semele, burning her to ashes."@en .
+
+gd:W000019015.NE00000002 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Hades transforms the dying Leuce into a white poplar tree."@en .
+
+gd:W000019017.NE00000001 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Hector kills Patroclus."@en .
+
+gd:W000019017.NE00000003 a gc:G5_Narrative_Event ;
+    skos:prefLabel "Achilles kills Hector in battle."@en .
+
+gd:NR00000001 a gc:G11_Narrative_Role ;
+    skos:prefLabel "victim"@en .
+
+gd:NR00000002 a gc:G11_Narrative_Role ;
+    skos:prefLabel "perpetrator"@en .
+
+gd:W000019008 dlp:d-uses gd:W000019008.NS00000001 .
+gd:W000019008 dlp:d-uses gd:W000019008.NS00000002 .
+gd:W000019009 dlp:d-uses gd:W000019009.NS00000001 .
+gd:W000019010 dlp:d-uses gd:W000019010.NS00000001 .
+gd:W000019011 dlp:d-uses gd:W000019011.NS00000001 .
+gd:W000019012 dlp:d-uses gd:W000019012.NS00000001 .
+gd:W000019013 dlp:d-uses gd:W000019013.NS00000001 .
+gd:W000019013 dlp:d-uses gd:W000019013.NS00000002 .
+gd:W000019014 dlp:d-uses gd:W000019014.NS00000001 .
+gd:W000019015 dlp:d-uses gd:W000019015.NS00000001 .
+gd:W000019016 dlp:d-uses gd:W000019016.NS00000001 .
+gd:W000019017 dlp:d-uses gd:W000019017.NS00000001 .
+gd:W000019017 dlp:d-uses gd:W000019017.NS00000002 .
+
+

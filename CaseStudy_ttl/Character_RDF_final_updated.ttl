@@ -1,0 +1,1615 @@
+@prefix : <https://ontology.golemlab.eu/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix gc: <https://ontology.golemlab.eu/> .
+@prefix dlp: <http://www.ontologydesignpatterns.org/ont/dlp/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix golem: <https://golemlab.eu/graph/> .
+@prefix schema: <https://schema.org/> .
+@prefix lrm: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix gd: <https://data.golemlab.eu/entity/> .
+@prefix gt: <https://data.golemlab.eu/entity/type/> .
+@base <https://ontology.golemlab.eu/> .
+
+
+
+#Set-up schema
+schema:title a rdfs:Property .
+schema:title rdfs:domain lrm:F1 .
+schema:title rdfs:range xsd:string .
+
+gt:T000000004 a crm:E55_Type .
+gt:T000000004 skos:prefLabel "Biography"@en .
+gt:T000000004 crm:P127_has_broader_term gt:T000000011 .
+
+gt:T000000005 a crm:E55_Type .
+gt:T000000005 skos:prefLabel "Physical Description"@en .
+gt:T000000005 crm:P127_has_broader_term gt:T000000011 .
+
+gt:T000000006 a crm:E55_Type .
+gt:T000000006 skos:prefLabel "Psychological Description"@en .
+gt:T000000006 crm:P127_has_broader_term gt:T000000011 .
+
+gd:C000000254 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Orpheus (Ancient Greek Religion & Lore)"@en .
+
+gd:C000000255 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Eurydice wife of Orpheus (Ancient Greek Religion & Lore)"@en .
+
+gd:C000000257 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Maenads (Ancient Greek Religion & Lore)"@en .
+
+gd:C000000258 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Cassandra (Ancient Greek Religion & Lore)"@en .
+
+gd:C000000259 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Clytaemnestra (Ancient Greek Religion & Lore)"@en .
+
+gd:C000000260 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Persephone (Ancient Greek Religion & Lore)"@en .
+
+gd:C000000261 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Demeter (Ancient Greek Religion & Lore)"@en .
+
+gd:C000000263 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Oenone (Ancient Greek Religion & Lore)"@en .
+
+gd:C000000265 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Helen (Ancient Greek Religion & Lore)"@en .
+
+gd:C000000267 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Myrrha (Ancient Greek Religion & Lore)"@en .
+
+gd:C000000268 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Cinyras (Ancient Greek Religion & Lore)"@en .
+
+gd:C000000269 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Adonis (Ancient Greek Religion & Lore)"@en .
+
+gd:C000000270 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Aphrodite (Ancient Greek Religion & Lore)"@en .
+
+gd:C000000271 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Wild Pig"@en .
+
+gd:C000000272 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Semele (Ancient Greek Religion & Lore)"@en .
+
+gd:C000000273 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Leuce (Ancient Greek Religion & Lore)"@en .
+
+gd:C000000275 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Hades (Ancient Greek Religion & Lore)"@en .
+
+gd:C000000276 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Teucer (Ancient Greek Religion & Lore)"@en .
+
+gd:C000000277 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Eurysaces (Ancient Greek Religion & Lore)"@en .
+
+gd:C000000278 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Ajax (Ancient Greek Religion & Lore)"@en .
+
+gd:C000000279 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Patroclus (Ancient Greek Religion & Lore)"@en .
+
+gd:W000019008.CF00000001 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "male"@en ;
+    gc:GP0i_is_feature_of gd:W000019008.C000000254 .
+
+gd:W000019008.CF00000002 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "musician"@en ;
+    gc:GP0i_is_feature_of gd:W000019008.C000000254 .
+
+gd:W000019008.CF00000003 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "grief"@en ;
+    gc:GP0i_is_feature_of gd:W000019008.C000000254 .
+
+gd:W000019008.CF00000004 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "weary of singing"@en ;
+    gc:GP0i_is_feature_of gd:W000019008.C000000254 .
+
+gd:W000019008.CF00000005 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "female"@en ;
+    gc:GP0i_is_feature_of gd:W000019008.C000000255 .
+
+gd:W000019008.CF00000006 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "died young"@en ;
+    gc:GP0i_is_feature_of gd:W000019008.C000000255 .
+
+gd:W000019008.CF00000007 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "forgiving"@en ;
+    gc:GP0i_is_feature_of gd:W000019008.C000000255 .
+
+gd:W000019008.CF00000008 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "loving"@en ;
+    gc:GP0i_is_feature_of gd:W000019008.C000000255 .
+
+gd:W000019008.CF00000009 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "male"@en ;
+    gc:GP0i_is_feature_of gd:W000019008.C000000256 .
+
+gd:W000019008.CF00000010 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "god of wine and revelry"@en ;
+    gc:GP0i_is_feature_of gd:W000019008.C000000256 .
+
+gd:W000019008.CF00000011 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "jealous"@en ;
+    gc:GP0i_is_feature_of gd:W000019008.C000000256 .
+
+gd:W000019008.CF00000012 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "vengeful"@en ;
+    gc:GP0i_is_feature_of gd:W000019008.C000000256 .
+
+gd:W000019008.CF00000013 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "male"@en ;
+    gc:GP0i_is_feature_of gd:W000019008.C000000257 .
+
+gd:W000019008.CF00000014 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "frenzied"@en ;
+    gc:GP0i_is_feature_of gd:W000019008.C000000257 .
+
+gd:W000019008.CF00000015 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "violent"@en ;
+    gc:GP0i_is_feature_of gd:W000019008.C000000257 .
+
+gd:W000019009.CF00000001 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "female"@en ;
+    gc:GP0i_is_feature_of gd:W000019009.C000000258 .
+
+gd:W000019009.CF00000002 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "Trojan prophetess"@en ;
+    gc:GP0i_is_feature_of gd:W000019009.C000000258 .
+
+gd:W000019009.CF00000003 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "bloodied"@en ;
+    gc:GP0i_is_feature_of gd:W000019009.C000000258 .
+
+gd:W000019009.CF00000004 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "wet hair"@en ;
+    gc:GP0i_is_feature_of gd:W000019009.C000000258 .
+
+gd:W000019009.CF00000005 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "bruised"@en ;
+    gc:GP0i_is_feature_of gd:W000019009.C000000258 .
+
+gd:W000019009.CF00000006 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "madness"@en ;
+    gc:GP0i_is_feature_of gd:W000019009.C000000258 .
+
+gd:W000019009.CF00000007 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "visions of doom"@en ;
+    gc:GP0i_is_feature_of gd:W000019009.C000000258 .
+
+gd:W000019009.CF00000008 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "resigned to fate"@en ;
+    gc:GP0i_is_feature_of gd:W000019009.C000000258 .
+
+gd:W000019009.CF00000009 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "female"@en ;
+    gc:GP0i_is_feature_of gd:W000019009.C000000259 .
+
+gd:W000019009.CF00000010 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "queen of Mycenae"@en ;
+    gc:GP0i_is_feature_of gd:W000019009.C000000259 .
+
+gd:W000019009.CF00000011 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "face drawn white"@en ;
+    gc:GP0i_is_feature_of gd:W000019009.C000000259 .
+
+gd:W000019009.CF00000012 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "blood in her hair and on her cheeks；eyes dark and hollow"@en ;
+    gc:GP0i_is_feature_of gd:W000019009.C000000259 .
+
+gd:W000019009.CF00000013 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "angry"@en ;
+    gc:GP0i_is_feature_of gd:W000019009.C000000259 .
+
+gd:W000019009.CF00000014 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "vengeful"@en ;
+    gc:GP0i_is_feature_of gd:W000019009.C000000259 .
+
+gd:W000019009.CF00000015 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "lonely"@en ;
+    gc:GP0i_is_feature_of gd:W000019009.C000000259 .
+
+gd:W000019009.CF00000016 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "unstable"@en ;
+    gc:GP0i_is_feature_of gd:W000019009.C000000259 .
+
+gd:W000019010.CF00000001 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "female"@en ;
+    gc:GP0i_is_feature_of gd:W000019010.C000000260 .
+
+gd:W000019010.CF00000002 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "goddess of spring"@en ;
+    gc:GP0i_is_feature_of gd:W000019010.C000000260 .
+
+gd:W000019010.CF00000003 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "queen of underworld"@en ;
+    gc:GP0i_is_feature_of gd:W000019010.C000000260 .
+
+gd:W000019010.CF00000004 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "white patches on skin"@en ;
+    gc:GP0i_is_feature_of gd:W000019010.C000000260 .
+
+gd:W000019010.CF00000005 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "wild curly hair"@en ;
+    gc:GP0i_is_feature_of gd:W000019010.C000000260 .
+
+gd:W000019010.CF00000006 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "wears robes"@en ;
+    gc:GP0i_is_feature_of gd:W000019010.C000000260 .
+
+gd:W000019010.CF00000007 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "depressed"@en ;
+    gc:GP0i_is_feature_of gd:W000019010.C000000260 .
+
+gd:W000019010.CF00000008 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "self-destructive"@en ;
+    gc:GP0i_is_feature_of gd:W000019010.C000000260 .
+
+gd:W000019010.CF00000009 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "rebellious"@en ;
+    gc:GP0i_is_feature_of gd:W000019010.C000000260 .
+
+gd:W000019010.CF00000010 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "female"@en ;
+    gc:GP0i_is_feature_of gd:W000019010.C000000261 .
+
+gd:W000019010.CF00000011 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "goddess of agriculture"@en ;
+    gc:GP0i_is_feature_of gd:W000019010.C000000261 .
+
+gd:W000019010.CF00000012 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "wings"@en ;
+    gc:GP0i_is_feature_of gd:W000019010.C000000261 .
+
+gd:W000019010.CF00000013 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "towering stature"@en ;
+    gc:GP0i_is_feature_of gd:W000019010.C000000261 .
+
+gd:W000019010.CF00000014 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "Overprotective"@en ;
+    gc:GP0i_is_feature_of gd:W000019010.C000000261 .
+
+gd:W000019010.CF00000015 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "authoritative"@en ;
+    gc:GP0i_is_feature_of gd:W000019010.C000000261 .
+
+gd:W000019010.CF00000016 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "loving"@en ;
+    gc:GP0i_is_feature_of gd:W000019010.C000000261 .
+
+gd:W000019010.CF00000017 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "male"@en ;
+    gc:GP0i_is_feature_of gd:W000019010.C000000262 .
+
+gd:W000019010.CF00000018 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "king of the gods"@en ;
+    gc:GP0i_is_feature_of gd:W000019010.C000000262 .
+
+gd:W000019010.CF00000019 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "manipulative"@en ;
+    gc:GP0i_is_feature_of gd:W000019010.C000000262 .
+
+gd:W000019010.CF00000020 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "egotistical"@en ;
+    gc:GP0i_is_feature_of gd:W000019010.C000000262 .
+
+gd:W000019010.CF00000021 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "controlling"@en ;
+    gc:GP0i_is_feature_of gd:W000019010.C000000262 .
+
+gd:W000019011.CF00000001 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "female"@en ;
+    gc:GP0i_is_feature_of gd:W000019011.C000000263 .
+
+gd:W000019011.CF00000002 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "river nymph"@en ;
+    gc:GP0i_is_feature_of gd:W000019011.C000000263 .
+
+gd:W000019011.CF00000003 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "bruised face"@en ;
+    gc:GP0i_is_feature_of gd:W000019011.C000000263 .
+
+gd:W000019011.CF00000004 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "arrow wound"@en ;
+    gc:GP0i_is_feature_of gd:W000019011.C000000263 .
+
+gd:W000019011.CF00000005 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "rage-filled"@en ;
+    gc:GP0i_is_feature_of gd:W000019011.C000000263 .
+
+gd:W000019011.CF00000006 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "grieving"@en ;
+    gc:GP0i_is_feature_of gd:W000019011.C000000263 .
+
+gd:W000019011.CF00000007 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "vengeful"@en ;
+    gc:GP0i_is_feature_of gd:W000019011.C000000263 .
+
+gd:W000019011.CF00000008 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "male"@en ;
+    gc:GP0i_is_feature_of gd:W000019011.C000000274 .
+
+gd:W000019011.CF00000009 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "prince of Troy"@en ;
+    gc:GP0i_is_feature_of gd:W000019011.C000000274 .
+
+gd:W000019011.CF00000010 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "mortally wounded"@en ;
+    gc:GP0i_is_feature_of gd:W000019011.C000000274 .
+
+gd:W000019011.CF00000011 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "dying"@en ;
+    gc:GP0i_is_feature_of gd:W000019011.C000000274 .
+
+gd:W000019011.CF00000012 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "desperate"@en ;
+    gc:GP0i_is_feature_of gd:W000019011.C000000274 .
+
+gd:W000019011.CF00000013 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "regretful"@en ;
+    gc:GP0i_is_feature_of gd:W000019011.C000000274 .
+
+gd:W000019011.CF00000014 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "naive"@en ;
+    gc:GP0i_is_feature_of gd:W000019011.C000000274 .
+
+gd:W000019012.CF00000001 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "male"@en ;
+    gc:GP0i_is_feature_of gd:W000019012.C000000264 .
+
+gd:W000019012.CF00000002 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "prince of Troy"@en ;
+    gc:GP0i_is_feature_of gd:W000019012.C000000264 .
+
+gd:W000019012.CF00000003 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "noble warrior"@en ;
+    gc:GP0i_is_feature_of gd:W000019012.C000000264 .
+
+gd:W000019012.CF00000004 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "kind"@en ;
+    gc:GP0i_is_feature_of gd:W000019012.C000000264 .
+
+gd:W000019012.CF00000005 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "honorable"@en ;
+    gc:GP0i_is_feature_of gd:W000019012.C000000264 .
+
+gd:W000019012.CF00000006 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "treats Helen with dignity"@en ;
+    gc:GP0i_is_feature_of gd:W000019012.C000000264 .
+
+gd:W000019012.CF00000007 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "male"@en ;
+    gc:GP0i_is_feature_of gd:W000019012.C000000274 .
+
+gd:W000019012.CF00000008 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "prince of Troy"@en ;
+    gc:GP0i_is_feature_of gd:W000019012.C000000274 .
+
+gd:W000019012.CF00000009 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "initially passionate"@en ;
+    gc:GP0i_is_feature_of gd:W000019012.C000000274 .
+
+gd:W000019012.CF00000010 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "later indifferent"@en ;
+    gc:GP0i_is_feature_of gd:W000019012.C000000274 .
+
+gd:W000019012.CF00000011 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "female"@en ;
+    gc:GP0i_is_feature_of gd:W000019012.C000000265 .
+
+gd:W000019012.CF00000012 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "queen of Sparta"@en ;
+    gc:GP0i_is_feature_of gd:W000019012.C000000265 .
+
+gd:W000019012.CF00000013 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "former queen of Troy"@en ;
+    gc:GP0i_is_feature_of gd:W000019012.C000000265 .
+
+gd:W000019012.CF00000014 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "famed for divine beauty"@en ;
+    gc:GP0i_is_feature_of gd:W000019012.C000000265 .
+
+gd:W000019012.CF00000015 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "supernaturally beautiful (in life)"@en ;
+    gc:GP0i_is_feature_of gd:W000019012.C000000265 .
+
+gd:W000019012.CF00000016 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "now mortal-looking (in afterlife)"@en ;
+    gc:GP0i_is_feature_of gd:W000019012.C000000265 .
+
+gd:W000019012.CF00000017 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "hollow"@en ;
+    gc:GP0i_is_feature_of gd:W000019012.C000000265 .
+
+gd:W000019012.CF00000018 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "disillusioned"@en ;
+    gc:GP0i_is_feature_of gd:W000019012.C000000265 .
+
+gd:W000019012.CF00000019 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "yearning for genuine connection"@en ;
+    gc:GP0i_is_feature_of gd:W000019012.C000000265 .
+
+gd:W000019012.CF00000020 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "male"@en ;
+    gc:GP0i_is_feature_of gd:W000019012.C000000266 .
+
+gd:W000019013.CF00000001 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "female"@en ;
+    gc:GP0i_is_feature_of gd:W000019013.C000000267 .
+
+gd:W000019013.CF00000002 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "princess"@en ;
+    gc:GP0i_is_feature_of gd:W000019013.C000000267 .
+
+gd:W000019013.CF00000003 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "transformed into a myrrh tree"@en ;
+    gc:GP0i_is_feature_of gd:W000019013.C000000267 .
+
+gd:W000019013.CF00000004 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "tormented"@en ;
+    gc:GP0i_is_feature_of gd:W000019013.C000000267 .
+
+gd:W000019013.CF00000005 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "ashamed"@en ;
+    gc:GP0i_is_feature_of gd:W000019013.C000000267 .
+
+gd:W000019013.CF00000006 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "desperate"@en ;
+    gc:GP0i_is_feature_of gd:W000019013.C000000267 .
+
+gd:W000019013.CF00000007 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "tormented"@en ;
+    gc:GP0i_is_feature_of gd:W000019013.C000000267 .
+
+gd:W000019013.CF00000008 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "ashamed"@en ;
+    gc:GP0i_is_feature_of gd:W000019013.C000000267 .
+
+gd:W000019013.CF00000009 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "desperate"@en ;
+    gc:GP0i_is_feature_of gd:W000019013.C000000267 .
+
+gd:W000019013.CF00000010 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "male"@en ;
+    gc:GP0i_is_feature_of gd:W000019013.C000000268 .
+
+gd:W000019013.CF00000011 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "king"@en ;
+    gc:GP0i_is_feature_of gd:W000019013.C000000268 .
+
+gd:W000019013.CF00000012 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "lustful"@en ;
+    gc:GP0i_is_feature_of gd:W000019013.C000000268 .
+
+gd:W000019013.CF00000013 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "enraged upon discovery"@en ;
+    gc:GP0i_is_feature_of gd:W000019013.C000000268 .
+
+gd:W000019013.CF00000014 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "male"@en ;
+    gc:GP0i_is_feature_of gd:W000019013.C000000269 .
+
+gd:W000019013.CF00000015 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "most beautiful man"@en ;
+    gc:GP0i_is_feature_of gd:W000019013.C000000269 .
+
+gd:W000019013.CF00000016 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "youthful"@en ;
+    gc:GP0i_is_feature_of gd:W000019013.C000000269 .
+
+gd:W000019013.CF00000017 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "reckless"@en ;
+    gc:GP0i_is_feature_of gd:W000019013.C000000269 .
+
+gd:W000019013.CF00000018 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "doomed"@en ;
+    gc:GP0i_is_feature_of gd:W000019013.C000000269 .
+
+gd:W000019013.CF00000019 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "female"@en ;
+    gc:GP0i_is_feature_of gd:W000019013.C000000270 .
+
+gd:W000019013.CF00000020 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "goddess of love"@en ;
+    gc:GP0i_is_feature_of gd:W000019013.C000000270 .
+
+gd:W000019013.CF00000021 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "capricious"@en ;
+    gc:GP0i_is_feature_of gd:W000019013.C000000270 .
+
+gd:W000019013.CF00000022 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "possessive"@en ;
+    gc:GP0i_is_feature_of gd:W000019013.C000000270 .
+
+gd:W000019013.CF00000023 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "grief-stricken"@en ;
+    gc:GP0i_is_feature_of gd:W000019013.C000000270 .
+
+gd:W000019013.CF00000024 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "wild pig"@en ;
+    gc:GP0i_is_feature_of gd:W000019013.C000000271 .
+
+gd:W000019014.CF00000001 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "female"@en ;
+    gc:GP0i_is_feature_of gd:W000019014.C000000272 .
+
+gd:W000019014.CF00000002 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "mortal princess"@en ;
+    gc:GP0i_is_feature_of gd:W000019014.C000000272 .
+
+gd:W000019014.CF00000003 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "charred eyes"@en ;
+    gc:GP0i_is_feature_of gd:W000019014.C000000272 .
+
+gd:W000019014.CF00000004 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "glowing pregnant body"@en ;
+    gc:GP0i_is_feature_of gd:W000019014.C000000272 .
+
+gd:W000019014.CF00000005 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "curious"@en ;
+    gc:GP0i_is_feature_of gd:W000019014.C000000272 .
+
+gd:W000019014.CF00000006 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "defiant"@en ;
+    gc:GP0i_is_feature_of gd:W000019014.C000000272 .
+
+gd:W000019014.CF00000007 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "doomed by ambition"@en ;
+    gc:GP0i_is_feature_of gd:W000019014.C000000272 .
+
+gd:W000019014.CF00000008 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "male"@en ;
+    gc:GP0i_is_feature_of gd:W000019014.C000000262 .
+
+gd:W000019014.CF00000009 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "king of gods"@en ;
+    gc:GP0i_is_feature_of gd:W000019014.C000000262 .
+
+gd:W000019014.CF00000010 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "divine form burns mortals"@en ;
+    gc:GP0i_is_feature_of gd:W000019014.C000000262 .
+
+gd:W000019014.CF00000011 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "fearful"@en ;
+    gc:GP0i_is_feature_of gd:W000019014.C000000262 .
+
+gd:W000019014.CF00000012 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "grieving"@en ;
+    gc:GP0i_is_feature_of gd:W000019014.C000000262 .
+
+gd:W000019014.CF00000013 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "vengeful"@en ;
+    gc:GP0i_is_feature_of gd:W000019014.C000000262 .
+
+gd:W000019014.CF00000014 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "male"@en ;
+    gc:GP0i_is_feature_of gd:W000019014.C000000256 .
+
+gd:W000019014.CF00000015 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "god of wine"@en ;
+    gc:GP0i_is_feature_of gd:W000019014.C000000256 .
+
+gd:W000019014.CF00000016 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "fetal form with panther mark"@en ;
+    gc:GP0i_is_feature_of gd:W000019014.C000000256 .
+
+gd:W000019014.CF00000017 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "gem umbilical cord"@en ;
+    gc:GP0i_is_feature_of gd:W000019014.C000000256 .
+
+gd:W000019015.CF00000001 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "female"@en ;
+    gc:GP0i_is_feature_of gd:W000019015.C000000273 .
+
+gd:W000019015.CF00000002 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "mortal woman"@en ;
+    gc:GP0i_is_feature_of gd:W000019015.C000000273 .
+
+gd:W000019015.CF00000003 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "transformed into a white poplar tree"@en ;
+    gc:GP0i_is_feature_of gd:W000019015.C000000273 .
+
+gd:W000019015.CF00000004 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "young"@en ;
+    gc:GP0i_is_feature_of gd:W000019015.C000000273 .
+
+gd:W000019015.CF00000005 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "sapling"@en ;
+    gc:GP0i_is_feature_of gd:W000019015.C000000273 .
+
+gd:W000019015.CF00000006 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "tree"@en ;
+    gc:GP0i_is_feature_of gd:W000019015.C000000273 .
+
+gd:W000019015.CF00000007 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "restless"@en ;
+    gc:GP0i_is_feature_of gd:W000019015.C000000273 .
+
+gd:W000019015.CF00000008 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "creative"@en ;
+    gc:GP0i_is_feature_of gd:W000019015.C000000273 .
+
+gd:W000019015.CF00000009 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "loving"@en ;
+    gc:GP0i_is_feature_of gd:W000019015.C000000273 .
+
+gd:W000019015.CF00000010 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "male"@en ;
+    gc:GP0i_is_feature_of gd:W000019015.C000000275 .
+
+gd:W000019015.CF00000011 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "god of the Underworld"@en ;
+    gc:GP0i_is_feature_of gd:W000019015.C000000275 .
+
+gd:W000019015.CF00000012 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "ruler of the dead"@en ;
+    gc:GP0i_is_feature_of gd:W000019015.C000000275 .
+
+gd:W000019015.CF00000013 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "tall"@en ;
+    gc:GP0i_is_feature_of gd:W000019015.C000000275 .
+
+gd:W000019015.CF00000014 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "dark presence"@en ;
+    gc:GP0i_is_feature_of gd:W000019015.C000000275 .
+
+gd:W000019015.CF00000015 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "grieving"@en ;
+    gc:GP0i_is_feature_of gd:W000019015.C000000275 .
+
+gd:W000019015.CF00000016 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "tender"@en ;
+    gc:GP0i_is_feature_of gd:W000019015.C000000275 .
+
+gd:W000019015.CF00000017 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "devoted"@en ;
+    gc:GP0i_is_feature_of gd:W000019015.C000000275 .
+
+gd:W000019016.CF00000001 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "male"@en ;
+    gc:GP0i_is_feature_of gd:W000019016.C000000276 .
+
+gd:W000019016.CF00000002 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "skilled archer"@en ;
+    gc:GP0i_is_feature_of gd:W000019016.C000000276 .
+
+gd:W000019016.CF00000003 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "guilt-ridden"@en ;
+    gc:GP0i_is_feature_of gd:W000019016.C000000276 .
+
+gd:W000019016.CF00000004 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "protective"@en ;
+    gc:GP0i_is_feature_of gd:W000019016.C000000276 .
+
+gd:W000019016.CF00000005 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "traumatized"@en ;
+    gc:GP0i_is_feature_of gd:W000019016.C000000276 .
+
+gd:W000019016.CF00000006 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "male"@en ;
+    gc:GP0i_is_feature_of gd:W000019016.C000000277 .
+
+gd:W000019016.CF00000007 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "4-year-old"@en ;
+    gc:GP0i_is_feature_of gd:W000019016.C000000277 .
+
+gd:W000019016.CF00000008 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "named \"broad shield\""@en ;
+    gc:GP0i_is_feature_of gd:W000019016.C000000277 .
+
+gd:W000019016.CF00000009 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "curly hair"@en ;
+    gc:GP0i_is_feature_of gd:W000019016.C000000277 .
+
+gd:W000019016.CF00000010 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "soft features"@en ;
+    gc:GP0i_is_feature_of gd:W000019016.C000000277 .
+
+gd:W000019016.CF00000011 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "childlike innocence"@en ;
+    gc:GP0i_is_feature_of gd:W000019016.C000000277 .
+
+gd:W000019016.CF00000012 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "Vulnerable"@en ;
+    gc:GP0i_is_feature_of gd:W000019016.C000000277 .
+
+gd:W000019016.CF00000013 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "unaware of tragedy"@en ;
+    gc:GP0i_is_feature_of gd:W000019016.C000000277 .
+
+gd:W000019016.CF00000014 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "male"@en ;
+    gc:GP0i_is_feature_of gd:W000019016.C000000278 .
+
+gd:W000019016.CF00000015 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "legendary warrior"@en ;
+    gc:GP0i_is_feature_of gd:W000019016.C000000278 .
+
+gd:W000019016.CF00000016 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "suicide"@en ;
+    gc:GP0i_is_feature_of gd:W000019016.C000000278 .
+
+gd:W000019016.CF00000017 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "prideful"@en ;
+    gc:GP0i_is_feature_of gd:W000019016.C000000278 .
+
+gd:W000019016.CF00000018 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "mentally broken (pre-death)"@en ;
+    gc:GP0i_is_feature_of gd:W000019016.C000000278 .
+
+gd:W000019017.CF00000001 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "male"@en ;
+    gc:GP0i_is_feature_of gd:W000019017.C000000264 .
+
+gd:W000019017.CF00000002 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "prince of Troy"@en ;
+    gc:GP0i_is_feature_of gd:W000019017.C000000264 .
+
+gd:W000019017.CF00000003 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "warrior"@en ;
+    gc:GP0i_is_feature_of gd:W000019017.C000000264 .
+
+gd:W000019017.CF00000004 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "tan skin"@en ;
+    gc:GP0i_is_feature_of gd:W000019017.C000000264 .
+
+gd:W000019017.CF00000005 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "scars and calluses"@en ;
+    gc:GP0i_is_feature_of gd:W000019017.C000000264 .
+
+gd:W000019017.CF00000006 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "handsome figure"@en ;
+    gc:GP0i_is_feature_of gd:W000019017.C000000264 .
+
+gd:W000019017.CF00000007 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "loves but resents Paris"@en ;
+    gc:GP0i_is_feature_of gd:W000019017.C000000264 .
+
+gd:W000019017.CF00000008 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "conflicted emotions"@en ;
+    gc:GP0i_is_feature_of gd:W000019017.C000000264 .
+
+gd:W000019017.CF00000009 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "male"@en ;
+    gc:GP0i_is_feature_of gd:W000019017.C000000274 .
+
+gd:W000019017.CF00000010 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "prince of Troy"@en ;
+    gc:GP0i_is_feature_of gd:W000019017.C000000274 .
+
+gd:W000019017.CF00000011 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "fairest man this side of the Aegean Sea"@en ;
+    gc:GP0i_is_feature_of gd:W000019017.C000000274 .
+
+gd:W000019017.CF00000012 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "golden smooth skin"@en ;
+    gc:GP0i_is_feature_of gd:W000019017.C000000274 .
+
+gd:W000019017.CF00000013 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000005 ;
+    skos:prefLabel "contrasts with armor"@en ;
+    gc:GP0i_is_feature_of gd:W000019017.C000000274 .
+
+gd:W000019017.CF00000014 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "In love with Hector"@en ;
+    gc:GP0i_is_feature_of gd:W000019017.C000000274 .
+
+gd:W000019017.CF00000015 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "guilt-ridden"@en ;
+    gc:GP0i_is_feature_of gd:W000019017.C000000274 .
+
+gd:W000019017.CF00000016 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "charming"@en ;
+    gc:GP0i_is_feature_of gd:W000019017.C000000274 .
+
+gd:W000019017.CF00000017 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "male"@en ;
+    gc:GP0i_is_feature_of gd:W000019017.C000000266 .
+
+gd:W000019017.CF00000018 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "Greek warrior"@en ;
+    gc:GP0i_is_feature_of gd:W000019017.C000000266 .
+
+gd:W000019017.CF00000019 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "half-god"@en ;
+    gc:GP0i_is_feature_of gd:W000019017.C000000266 .
+
+gd:W000019017.CF00000020 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "half-mortal"@en ;
+    gc:GP0i_is_feature_of gd:W000019017.C000000266 .
+
+gd:W000019017.CF00000021 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "wrathful"@en ;
+    gc:GP0i_is_feature_of gd:W000019017.C000000266 .
+
+gd:W000019017.CF00000022 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000006 ;
+    skos:prefLabel "vengeful"@en ;
+    gc:GP0i_is_feature_of gd:W000019017.C000000266 .
+
+gd:W000019017.CF00000023 a gc:G17_Character_Feature ;
+    crm:P2_has_type gt:T000000004 ;
+    skos:prefLabel "male"@en ;
+    gc:GP0i_is_feature_of gd:W000019017.C000000279 .
+
+gd:C000000256 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Dionysus (Ancient Greek Religion & Lore)"@en .
+
+gd:C000000262 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Zeus (Ancient Greek Religion & Lore)"@en .
+
+gd:C000000264 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Hector (Ancient Greek Religion & Lore)"@en .
+
+gd:C000000266 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Achilles (Ancient Greek Religion & Lore)"@en .
+
+gd:W000019009 a lrm:F1 ;
+    crm:P130_shows_features_of gd:F000001765 ;
+    golem:story_id 125672 ;
+    gc:GP1i_has_Character gd:W000019009.C000000258,
+        gd:W000019009.C000000259 ;
+    schema:title "(Appearing Like Images of Dreams)" .
+
+gd:W000019011 a lrm:F1 ;
+    crm:P130_shows_features_of gd:F000001765 ;
+    golem:story_id 40214382 ;
+    gc:GP1i_has_Character gd:W000019011.C000000263,
+        gd:W000019011.C000000274 ;
+    schema:title "The gods know revenge" .
+
+gd:W000019012.C000000266 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000266 ;
+    skos:prefLabel "Achilles"@en ;
+    gc:GP0_has_feature gd:W000019012.CF00000020 ;
+    gc:GP1_is_character_in gd:W000019012 .
+
+gd:W000019013.C000000271 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000271 ;
+    skos:prefLabel "wild pig"@en ;
+    gc:GP0_has_feature gd:W000019013.CF00000024 ;
+    gc:GP1_is_character_in gd:W000019013 .
+
+gd:W000019015 a lrm:F1 ;
+    crm:P130_shows_features_of gd:F000001765 ;
+    golem:story_id 39722094 ;
+    gc:GP1i_has_Character gd:W000019015.C000000273,
+        gd:W000019015.C000000275 ;
+    schema:title "Poplar Tree" .
+
+gd:W000019017.C000000279 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000279 ;
+    skos:prefLabel "Patroclus"@en ;
+    gc:GP0_has_feature gd:W000019017.CF00000023 ;
+    gc:GP1_is_character_in gd:W000019017 .
+
+gd:C000000274 a gc:G0_Character-Stoff ;
+    skos:prefLabel "Paris (Ancient Greek Religion & Lore)"@en .
+
+gd:W000019010 a lrm:F1 ;
+    crm:P130_shows_features_of gd:F000001765 ;
+    golem:story_id 56631334 ;
+    gc:GP1i_has_Character gd:W000019010.C000000260,
+        gd:W000019010.C000000261,
+        gd:W000019010.C000000262 ;
+    schema:title "Ugly Beauty And A Restless Love" .
+
+gd:W000019014 a lrm:F1 ;
+    crm:P130_shows_features_of gd:F000001765 ;
+    golem:story_id 57137989 ;
+    gc:GP1i_has_Character gd:W000019014.C000000256,
+        gd:W000019014.C000000262,
+        gd:W000019014.C000000272 ;
+    schema:title "Twice-Born" .
+
+gd:W000019016 a lrm:F1 ;
+    crm:P130_shows_features_of gd:F000001765 ;
+    golem:story_id 40607286 ;
+    gc:GP1i_has_Character gd:W000019016.C000000276,
+        gd:W000019016.C000000277,
+        gd:W000019016.C000000278 ;
+    schema:title "A Heavy Responsibility" .
+
+gd:W000019008 a lrm:F1 ;
+    crm:P130_shows_features_of gd:F000001765 ;
+    golem:story_id 56757454 ;
+    gc:GP1i_has_Character gd:W000019008.C000000254,
+        gd:W000019008.C000000255,
+        gd:W000019008.C000000256,
+        gd:W000019008.C000000257 ;
+    schema:title "When the Myth is Over" .
+
+gd:W000019008.C000000257 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000257 ;
+    skos:prefLabel "Maenads"@en ;
+    gc:GP0_has_feature gd:W000019008.CF00000013,
+        gd:W000019008.CF00000014,
+        gd:W000019008.CF00000015 ;
+    gc:GP1_is_character_in gd:W000019008 .
+
+gd:W000019012 a lrm:F1 ;
+    crm:P130_shows_features_of gd:F000001765 ;
+    golem:story_id 109012 ;
+    gc:GP1i_has_Character gd:W000019012.C000000264,
+        gd:W000019012.C000000265,
+        gd:W000019012.C000000266,
+        gd:W000019012.C000000274 ;
+    schema:title "The Face That—" .
+
+gd:W000019017 a lrm:F1 ;
+    crm:P130_shows_features_of gd:F000001765 ;
+    golem:story_id 17464 ;
+    gc:GP1i_has_Character gd:W000019017.C000000264,
+        gd:W000019017.C000000266,
+        gd:W000019017.C000000274,
+        gd:W000019017.C000000279 ;
+    schema:title "Requiem" .
+
+gd:W000019008.C000000254 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000254 ;
+    skos:prefLabel "Orpheus"@en ;
+    gc:GP0_has_feature gd:W000019008.CF00000001,
+        gd:W000019008.CF00000002,
+        gd:W000019008.CF00000003,
+        gd:W000019008.CF00000004 ;
+    gc:GP1_is_character_in gd:W000019008 .
+
+gd:W000019008.C000000255 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000255 ;
+    skos:prefLabel "Eurydice"@en ;
+    gc:GP0_has_feature gd:W000019008.CF00000005,
+        gd:W000019008.CF00000006,
+        gd:W000019008.CF00000007,
+        gd:W000019008.CF00000008 ;
+    gc:GP1_is_character_in gd:W000019008 .
+
+gd:W000019008.C000000256 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000256 ;
+    skos:prefLabel "Dionysus"@en ;
+    gc:GP0_has_feature gd:W000019008.CF00000009,
+        gd:W000019008.CF00000010,
+        gd:W000019008.CF00000011,
+        gd:W000019008.CF00000012 ;
+    gc:GP1_is_character_in gd:W000019008 .
+
+gd:W000019012.C000000274 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000274 ;
+    skos:prefLabel "Paris"@en ;
+    gc:GP0_has_feature gd:W000019012.CF00000007,
+        gd:W000019012.CF00000008,
+        gd:W000019012.CF00000009,
+        gd:W000019012.CF00000010 ;
+    gc:GP1_is_character_in gd:W000019012 .
+
+gd:W000019013 a lrm:F1 ;
+    crm:P130_shows_features_of gd:F000001765 ;
+    golem:story_id 24847147 ;
+    gc:GP1i_has_Character gd:W000019013.C000000267,
+        gd:W000019013.C000000268,
+        gd:W000019013.C000000269,
+        gd:W000019013.C000000270,
+        gd:W000019013.C000000271 ;
+    schema:title "Who Weeps?" .
+
+gd:W000019013.C000000268 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000268 ;
+    skos:prefLabel "Cinyras"@en ;
+    gc:GP0_has_feature gd:W000019013.CF00000010,
+        gd:W000019013.CF00000011,
+        gd:W000019013.CF00000012,
+        gd:W000019013.CF00000013 ;
+    gc:GP1_is_character_in gd:W000019013 .
+
+gd:W000019014.C000000256 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000256 ;
+    skos:prefLabel "Dionysus"@en ;
+    gc:GP0_has_feature gd:W000019014.CF00000014,
+        gd:W000019014.CF00000015,
+        gd:W000019014.CF00000016,
+        gd:W000019014.CF00000017 ;
+    gc:GP1_is_character_in gd:W000019014 .
+
+gd:W000019010.C000000262 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000262 ;
+    skos:prefLabel "Zeus"@en ;
+    gc:GP0_has_feature gd:W000019010.CF00000017,
+        gd:W000019010.CF00000018,
+        gd:W000019010.CF00000019,
+        gd:W000019010.CF00000020,
+        gd:W000019010.CF00000021 ;
+    gc:GP1_is_character_in gd:W000019010 .
+
+gd:W000019013.C000000269 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000269 ;
+    skos:prefLabel "Adonis"@en ;
+    gc:GP0_has_feature gd:W000019013.CF00000014,
+        gd:W000019013.CF00000015,
+        gd:W000019013.CF00000016,
+        gd:W000019013.CF00000017,
+        gd:W000019013.CF00000018 ;
+    gc:GP1_is_character_in gd:W000019013 .
+
+gd:W000019013.C000000270 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000270 ;
+    skos:prefLabel "Aphrodite"@en ;
+    gc:GP0_has_feature gd:W000019013.CF00000019,
+        gd:W000019013.CF00000020,
+        gd:W000019013.CF00000021,
+        gd:W000019013.CF00000022,
+        gd:W000019013.CF00000023 ;
+    gc:GP1_is_character_in gd:W000019013 .
+
+gd:W000019016.C000000276 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000276 ;
+    skos:prefLabel "Teucer"@en ;
+    gc:GP0_has_feature gd:W000019016.CF00000001,
+        gd:W000019016.CF00000002,
+        gd:W000019016.CF00000003,
+        gd:W000019016.CF00000004,
+        gd:W000019016.CF00000005 ;
+    gc:GP1_is_character_in gd:W000019016 .
+
+gd:W000019016.C000000278 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000278 ;
+    skos:prefLabel "Ajax"@en ;
+    gc:GP0_has_feature gd:W000019016.CF00000014,
+        gd:W000019016.CF00000015,
+        gd:W000019016.CF00000016,
+        gd:W000019016.CF00000017,
+        gd:W000019016.CF00000018 ;
+    gc:GP1_is_character_in gd:W000019016 .
+
+gd:W000019012.C000000264 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000264 ;
+    skos:prefLabel "Hector"@en ;
+    gc:GP0_has_feature gd:W000019012.CF00000001,
+        gd:W000019012.CF00000002,
+        gd:W000019012.CF00000003,
+        gd:W000019012.CF00000004,
+        gd:W000019012.CF00000005,
+        gd:W000019012.CF00000006 ;
+    gc:GP1_is_character_in gd:W000019012 .
+
+gd:W000019014.C000000262 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000262 ;
+    skos:prefLabel "Zeus"@en ;
+    gc:GP0_has_feature gd:W000019014.CF00000008,
+        gd:W000019014.CF00000009,
+        gd:W000019014.CF00000010,
+        gd:W000019014.CF00000011,
+        gd:W000019014.CF00000012,
+        gd:W000019014.CF00000013 ;
+    gc:GP1_is_character_in gd:W000019014 .
+
+gd:W000019017.C000000266 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000266 ;
+    skos:prefLabel "Achilles"@en ;
+    gc:GP0_has_feature gd:W000019017.CF00000017,
+        gd:W000019017.CF00000018,
+        gd:W000019017.CF00000019,
+        gd:W000019017.CF00000020,
+        gd:W000019017.CF00000021,
+        gd:W000019017.CF00000022 ;
+    gc:GP1_is_character_in gd:W000019017 .
+
+gd:W000019010.C000000261 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000261 ;
+    skos:prefLabel "Demeter"@en ;
+    gc:GP0_has_feature gd:W000019010.CF00000010,
+        gd:W000019010.CF00000011,
+        gd:W000019010.CF00000012,
+        gd:W000019010.CF00000013,
+        gd:W000019010.CF00000014,
+        gd:W000019010.CF00000015,
+        gd:W000019010.CF00000016 ;
+    gc:GP1_is_character_in gd:W000019010 .
+
+gd:W000019011.C000000263 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000263 ;
+    skos:prefLabel "Oenone"@en ;
+    gc:GP0_has_feature gd:W000019011.CF00000001,
+        gd:W000019011.CF00000002,
+        gd:W000019011.CF00000003,
+        gd:W000019011.CF00000004,
+        gd:W000019011.CF00000005,
+        gd:W000019011.CF00000006,
+        gd:W000019011.CF00000007 ;
+    gc:GP1_is_character_in gd:W000019011 .
+
+gd:W000019011.C000000274 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000274 ;
+    skos:prefLabel "Paris"@en ;
+    gc:GP0_has_feature gd:W000019011.CF00000008,
+        gd:W000019011.CF00000009,
+        gd:W000019011.CF00000010,
+        gd:W000019011.CF00000011,
+        gd:W000019011.CF00000012,
+        gd:W000019011.CF00000013,
+        gd:W000019011.CF00000014 ;
+    gc:GP1_is_character_in gd:W000019011 .
+
+gd:W000019014.C000000272 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000272 ;
+    skos:prefLabel "Semele"@en ;
+    gc:GP0_has_feature gd:W000019014.CF00000001,
+        gd:W000019014.CF00000002,
+        gd:W000019014.CF00000003,
+        gd:W000019014.CF00000004,
+        gd:W000019014.CF00000005,
+        gd:W000019014.CF00000006,
+        gd:W000019014.CF00000007 ;
+    gc:GP1_is_character_in gd:W000019014 .
+
+gd:W000019009.C000000258 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000258 ;
+    skos:prefLabel "Cassandra"@en ;
+    gc:GP0_has_feature gd:W000019009.CF00000001,
+        gd:W000019009.CF00000002,
+        gd:W000019009.CF00000003,
+        gd:W000019009.CF00000004,
+        gd:W000019009.CF00000005,
+        gd:W000019009.CF00000006,
+        gd:W000019009.CF00000007,
+        gd:W000019009.CF00000008 ;
+    gc:GP1_is_character_in gd:W000019009 .
+
+gd:W000019009.C000000259 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000259 ;
+    skos:prefLabel "Clytaemnestra"@en ;
+    gc:GP0_has_feature gd:W000019009.CF00000009,
+        gd:W000019009.CF00000010,
+        gd:W000019009.CF00000011,
+        gd:W000019009.CF00000012,
+        gd:W000019009.CF00000013,
+        gd:W000019009.CF00000014,
+        gd:W000019009.CF00000015,
+        gd:W000019009.CF00000016 ;
+    gc:GP1_is_character_in gd:W000019009 .
+
+gd:W000019015.C000000275 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000275 ;
+    skos:prefLabel "Hades"@en ;
+    gc:GP0_has_feature gd:W000019015.CF00000010,
+        gd:W000019015.CF00000011,
+        gd:W000019015.CF00000012,
+        gd:W000019015.CF00000013,
+        gd:W000019015.CF00000014,
+        gd:W000019015.CF00000015,
+        gd:W000019015.CF00000016,
+        gd:W000019015.CF00000017 ;
+    gc:GP1_is_character_in gd:W000019015 .
+
+gd:W000019016.C000000277 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000277 ;
+    skos:prefLabel "Eurysaces"@en ;
+    gc:GP0_has_feature gd:W000019016.CF00000006,
+        gd:W000019016.CF00000007,
+        gd:W000019016.CF00000008,
+        gd:W000019016.CF00000009,
+        gd:W000019016.CF00000010,
+        gd:W000019016.CF00000011,
+        gd:W000019016.CF00000012,
+        gd:W000019016.CF00000013 ;
+    gc:GP1_is_character_in gd:W000019016 .
+
+gd:W000019017.C000000264 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000264 ;
+    skos:prefLabel "Hector"@en ;
+    gc:GP0_has_feature gd:W000019017.CF00000001,
+        gd:W000019017.CF00000002,
+        gd:W000019017.CF00000003,
+        gd:W000019017.CF00000004,
+        gd:W000019017.CF00000005,
+        gd:W000019017.CF00000006,
+        gd:W000019017.CF00000007,
+        gd:W000019017.CF00000008 ;
+    gc:GP1_is_character_in gd:W000019017 .
+
+gd:W000019017.C000000274 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000274 ;
+    skos:prefLabel "Paris"@en ;
+    gc:GP0_has_feature gd:W000019017.CF00000009,
+        gd:W000019017.CF00000010,
+        gd:W000019017.CF00000011,
+        gd:W000019017.CF00000012,
+        gd:W000019017.CF00000013,
+        gd:W000019017.CF00000014,
+        gd:W000019017.CF00000015,
+        gd:W000019017.CF00000016 ;
+    gc:GP1_is_character_in gd:W000019017 .
+
+gd:F000001765 a gc:G15_Fandom ;
+    skos:prefLabel "Ancient Greek Religion & Lore"@en .
+
+gd:W000019010.C000000260 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000260 ;
+    skos:prefLabel "Persephone"@en ;
+    gc:GP0_has_feature gd:W000019010.CF00000001,
+        gd:W000019010.CF00000002,
+        gd:W000019010.CF00000003,
+        gd:W000019010.CF00000004,
+        gd:W000019010.CF00000005,
+        gd:W000019010.CF00000006,
+        gd:W000019010.CF00000007,
+        gd:W000019010.CF00000008,
+        gd:W000019010.CF00000009 ;
+    gc:GP1_is_character_in gd:W000019010 .
+
+gd:W000019012.C000000265 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000265 ;
+    skos:prefLabel "Helen"@en ;
+    gc:GP0_has_feature gd:W000019012.CF00000011,
+        gd:W000019012.CF00000012,
+        gd:W000019012.CF00000013,
+        gd:W000019012.CF00000014,
+        gd:W000019012.CF00000015,
+        gd:W000019012.CF00000016,
+        gd:W000019012.CF00000017,
+        gd:W000019012.CF00000018,
+        gd:W000019012.CF00000019 ;
+    gc:GP1_is_character_in gd:W000019012 .
+
+gd:W000019013.C000000267 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000267 ;
+    skos:prefLabel "Myrrha"@en ;
+    gc:GP0_has_feature gd:W000019013.CF00000001,
+        gd:W000019013.CF00000002,
+        gd:W000019013.CF00000003,
+        gd:W000019013.CF00000004,
+        gd:W000019013.CF00000005,
+        gd:W000019013.CF00000006,
+        gd:W000019013.CF00000007,
+        gd:W000019013.CF00000008,
+        gd:W000019013.CF00000009 ;
+    gc:GP1_is_character_in gd:W000019013 .
+
+gd:W000019015.C000000273 a gc:G1_Character ;
+    crm:P130_shows_features_of gd:C000000273 ;
+    skos:prefLabel "Leuce"@en ;
+    gc:GP0_has_feature gd:W000019015.CF00000001,
+        gd:W000019015.CF00000002,
+        gd:W000019015.CF00000003,
+        gd:W000019015.CF00000004,
+        gd:W000019015.CF00000005,
+        gd:W000019015.CF00000006,
+        gd:W000019015.CF00000007,
+        gd:W000019015.CF00000008,
+        gd:W000019015.CF00000009 ;
+    gc:GP1_is_character_in gd:W000019015 .
+
+
+#add new type
+
+# Add Type Hierarchy
+gt:T000000011 a crm:E55_Type .
+
+gt:T000000013 a crm:E55_Type .
+gt:T000000013 skos:prefLabel "originalFiction"@en .
+
+gt:T000000014 a crm:E55_Type .
+gt:T000000014 skos:prefLabel "fanFiction"@en .
+
+gt:T000000015 a crm:E55_Type .
+gt:T000000015 skos:prefLabel "originalCharacter"@en .
+
+gt:T000000016 a crm:E55_Type .
+gt:T000000016 skos:prefLabel "fanfictionCharacter"@en .
+
+# Type assignments for works
+gd:W000019008 crm:P2_has_type gt:T000000014 .
+gt:T000000014 crm:P2i_is_type_of gd:W000019008 .
+
+gd:W000019009 crm:P2_has_type gt:T000000014 .
+gt:T000000014 crm:P2i_is_type_of gd:W000019009 .
+
+gd:W000019010 crm:P2_has_type gt:T000000014 .
+gt:T000000014 crm:P2i_is_type_of gd:W000019010 .
+
+gd:W000019011 crm:P2_has_type gt:T000000014 .
+gt:T000000014 crm:P2i_is_type_of gd:W000019011 .
+
+gd:W000019012 crm:P2_has_type gt:T000000014 .
+gt:T000000014 crm:P2i_is_type_of gd:W000019012 .
+
+gd:W000019013 crm:P2_has_type gt:T000000014 .
+gt:T000000014 crm:P2i_is_type_of gd:W000019013 .
+
+gd:W000019014 crm:P2_has_type gt:T000000014 .
+gt:T000000014 crm:P2i_is_type_of gd:W000019014 .
+
+gd:W000019015 crm:P2_has_type gt:T000000014 .
+gt:T000000014 crm:P2i_is_type_of gd:W000019015 .
+
+gd:W000019016 crm:P2_has_type gt:T000000014 .
+gt:T000000014 crm:P2i_is_type_of gd:W000019016 .
+
+gd:W000019017 crm:P2_has_type gt:T000000014 .
+gt:T000000014 crm:P2i_is_type_of gd:W000019017 .
+
+# Type assignments for characters
+gd:W000019008.C000000254 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019008.C000000254 .
+
+gd:W000019008.C000000255 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019008.C000000255 .
+
+gd:W000019008.C000000256 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019008.C000000256 .
+
+gd:W000019008.C000000257 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019008.C000000257 .
+
+gd:W000019009.C000000258 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019009.C000000258 .
+
+gd:W000019009.C000000259 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019009.C000000259 .
+
+gd:W000019010.C000000260 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019010.C000000260 .
+
+gd:W000019010.C000000261 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019010.C000000261 .
+
+gd:W000019010.C000000262 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019010.C000000262 .
+
+gd:W000019011.C000000263 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019011.C000000263 .
+
+gd:W000019011.C000000274 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019011.C000000274 .
+
+gd:W000019012.C000000264 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019012.C000000264 .
+
+gd:W000019012.C000000265 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019012.C000000265 .
+
+gd:W000019012.C000000266 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019012.C000000266 .
+
+gd:W000019012.C000000274 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019012.C000000274 .
+
+gd:W000019013.C000000267 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019013.C000000267 .
+
+gd:W000019013.C000000268 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019013.C000000268 .
+
+gd:W000019013.C000000269 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019013.C000000269 .
+
+gd:W000019013.C000000270 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019013.C000000270 .
+
+gd:W000019013.C000000271 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019013.C000000271 .
+
+gd:W000019014.C000000256 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019014.C000000256 .
+
+gd:W000019014.C000000262 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019014.C000000262 .
+
+gd:W000019014.C000000272 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019014.C000000272 .
+
+gd:W000019015.C000000273 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019015.C000000273 .
+
+gd:W000019015.C000000275 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019015.C000000275 .
+
+gd:W000019016.C000000276 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019016.C000000276 .
+
+gd:W000019016.C000000277 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019016.C000000277 .
+
+gd:W000019016.C000000278 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019016.C000000278 .
+
+gd:W000019017.C000000264 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019017.C000000264 .
+
+gd:W000019017.C000000266 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019017.C000000266 .
+
+gd:W000019017.C000000274 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019017.C000000274 .
+
+gd:W000019017.C000000279 crm:P2_has_type gt:T000000016 .
+gt:T000000016 crm:P2i_is_type_of gd:W000019017.C000000279 .
