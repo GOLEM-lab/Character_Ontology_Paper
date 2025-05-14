@@ -12,7 +12,7 @@ The paper introduces **GOLEM Ontology** (Graphs and Ontologies for Literary Evol
 | Feature | Description |
 |---------|-------------|
 | **Mixed Approach** | Top-down (theory) + bottom-up (fan data) integration |
-| **Modular Design** | Reusable components for characters, events, relationships |
+| **Modular Design** | Reusable components for characters, events, relationships, etc. |
 | **Interoperability** | Aligns with CIDOC-CRM, DOLCE-Lite-Plus, and LRMoo |
 | **Implementation** | Developed in Protégé, documented with PyLode |
 
@@ -37,8 +37,6 @@ The paper introduces **GOLEM Ontology** (Graphs and Ontologies for Literary Evol
 Character_Ontology_Paper/
 ├── CaseStudy_ttl/            # RDF datasets for case study
 ├── CQ-SPARQL/                # Competency questions & queries
-│   ├── CQ1-Identity.rq       # Sample SPARQL query
-│   └── Results/              # Query outputs
 └── README.md                 # This file
 ```
 
