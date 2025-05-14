@@ -36,7 +36,7 @@ The paper introduces the Character Module with evaluation using Competency Quesi
 ```text
 Character_Ontology_Paper/
 ├── CaseStudy_ttl/            # RDF datasets for case study
-├── CQ-SPARQL/                # Competency questions & queries
+├── CQ-SPARQL                 # Competency questions & queries
 └── README.md                 # This file
 ```
 
