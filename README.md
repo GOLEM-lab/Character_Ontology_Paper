@@ -3,7 +3,7 @@
 This repository accompanies the manuscript **"Fans Reconstruct Heroes: Modeling Fictional Characters in Participatory Culture"**, submitted to the *Semantic Web Journal* Special Issue on *Semantic Web and Ontology Design for Cultural Heritage*.
 
 ## 📜 Overview
-The paper introduces **GOLEM Ontology** (Graphs and Ontologies for Literary Evolution Models), a framework for modeling fictional characters across canonical and fan-created works. The ontology:
+The paper introduces the Character Module with evaluation using Competency Quesitons and Case Study of the **GOLEM Ontology** (Graphs and Ontologies for Literary Evolution Models), a framework for modeling fictional characters across canonical and fan-created works. The ontology:
 - Bridges literary theory with participatory culture
 - Provides formal representation of dynamic, multi-contextual characters
 - Ensures interoperability with CIDOC-CRM, DOLCE, and other standards
