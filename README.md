@@ -33,14 +33,18 @@ The paper introduces **GOLEM Ontology** (Graphs and Ontologies for Literary Evol
 - [Case Study Knowledge Graph](https://golemlab.eu/graph/Greek10_Example)
 
 ## 📂 Repository Structure
+```text
 Character_Ontology_Paper/
-├── CaseStudy_ttl/ # RDF datasets for case study
-├── CQ-SPARQL/ # Competency questions & queries
-└── README.md # This file
+├── CaseStudy_ttl/            # RDF datasets for case study
+├── CQ-SPARQL/                # Competency questions & queries
+│   ├── CQ1-Identity.rq       # Sample SPARQL query
+│   └── Results/              # Query outputs
+└── README.md                 # This file
+```
 
 ## 🏗️ How to Use
-1. Explore the [case study data](CaseStudy_ttl/)
-2. Run SPARQL queries from [CQ-SPARQL/](CQ-SPARQL/) against our endpoint
+1. Explore the CaseStudy_ttl
+2. Run SPARQL queries from CQ-SPARQL at our endpoint
 3. Refer to the [GOLEM documentation](https://github.com/GOLEM-lab/golem-ontology) for ontology details
 
 ## 📄 Citation
