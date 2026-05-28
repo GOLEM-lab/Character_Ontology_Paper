@@ -1,0 +1,392 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dlp: <http://www.ontologydesignpatterns.org/ont/dlp/> .
+@prefix gc: <https://ontology.golemlab.eu/> .
+@prefix gd: <https://data.golemlab.eu/entity/> .
+@prefix gt: <https://data.golemlab.eu/entity/type/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+gd:W000019008.SR00000001 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000001 ;
+    dlp:involves gd:W000019008.C000000254,
+        gd:W000019008.C000000255 ;
+    skos:prefLabel "Orpheus husband of Eurydice"@en .
+
+gd:W000019008.SR00000002 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000003 ;
+    dlp:involves gd:W000019008.C000000254,
+        gd:W000019008.C000000256 ;
+    skos:prefLabel "Orpheus enemy of Dionysus"@en .
+
+gd:W000019008.SR00000003 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000002 ;
+    dlp:involves gd:W000019008.C000000254,
+        gd:W000019008.C000000255 ;
+    skos:prefLabel "Eurydice wife of Orpheus"@en .
+
+gd:W000019008.SR00000004 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000004 ;
+    dlp:involves gd:W000019008.C000000256,
+        gd:W000019008.C000000257 ;
+    skos:prefLabel "Maenads followers of Dionysus"@en .
+
+gd:W000019010.SR00000001 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000005 ;
+    dlp:involves gd:W000019010.C000000260,
+        gd:W000019010.C000000261 ;
+    skos:prefLabel "Persephone daughter of Demeter"@en .
+
+gd:W000019010.SR00000002 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000005 ;
+    dlp:involves gd:W000019010.C000000260,
+        gd:W000019010.C000000262 ;
+    skos:prefLabel "Persephone daughter of Zeus"@en .
+
+gd:W000019010.SR00000003 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000006 ;
+    dlp:involves gd:W000019010.C000000260,
+        gd:W000019010.C000000261 ;
+    skos:prefLabel "Demeter mother of Persephone"@en .
+
+gd:W000019010.SR00000004 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000007 ;
+    dlp:involves gd:W000019010.C000000260,
+        gd:W000019010.C000000262 ;
+    skos:prefLabel "Zeus father of Persephone"@en .
+
+gd:W000019011.SR00000001 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000008 ;
+    dlp:involves gd:W000019011.C000000263,
+        gd:W000019011.C000000274 ;
+    skos:prefLabel "Oenone former lover of Paris"@en .
+
+gd:W000019011.SR00000002 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000008 ;
+    dlp:involves gd:W000019011.C000000263,
+        gd:W000019011.C000000274 ;
+    skos:prefLabel "Paris former lover of Oenone"@en .
+
+gd:W000019012.SR00000001 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000009 ;
+    dlp:involves gd:W000019012.C000000264,
+        gd:W000019012.C000000274 ;
+    skos:prefLabel "Hector brother of Paris"@en .
+
+gd:W000019012.SR00000002 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000002 ;
+    dlp:involves gd:W000019012.C000000265,
+        gd:W000019012.C000000274 ;
+    skos:prefLabel "Helen wife of Paris"@en .
+
+gd:W000019012.SR00000003 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000009 ;
+    dlp:involves gd:W000019012.C000000264,
+        gd:W000019012.C000000274 ;
+    skos:prefLabel "Paris brother of Hector"@en .
+
+gd:W000019012.SR00000004 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000008 ;
+    dlp:involves gd:W000019012.C000000265,
+        gd:W000019012.C000000274 ;
+    skos:prefLabel "Paris lover of Helen"@en .
+
+gd:W000019013.SR00000001 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000005 ;
+    dlp:involves gd:W000019013.C000000267,
+        gd:W000019013.C000000268 ;
+    skos:prefLabel "Myrrha daughter of Cinyras"@en .
+
+gd:W000019013.SR00000002 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000006 ;
+    dlp:involves gd:W000019013.C000000267,
+        gd:W000019013.C000000269 ;
+    skos:prefLabel "Myrrha mother of Adonis"@en .
+
+gd:W000019013.SR00000003 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000007 ;
+    dlp:involves gd:W000019013.C000000267,
+        gd:W000019013.C000000268 ;
+    skos:prefLabel "Cinyras father of Myrrha"@en .
+
+gd:W000019013.SR00000004 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000010 ;
+    dlp:involves gd:W000019013.C000000268,
+        gd:W000019013.C000000269 ;
+    skos:prefLabel "Cinyras grandfather of Adonis"@en .
+
+gd:W000019013.SR00000005 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000011 ;
+    dlp:involves gd:W000019013.C000000267,
+        gd:W000019013.C000000269 ;
+    skos:prefLabel "Adonis son of Myrrha"@en .
+
+gd:W000019013.SR00000006 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000011 ;
+    dlp:involves gd:W000019013.C000000268,
+        gd:W000019013.C000000269 ;
+    skos:prefLabel "Adonis son of Cinyras"@en .
+
+gd:W000019013.SR00000007 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000008 ;
+    dlp:involves gd:W000019013.C000000269,
+        gd:W000019013.C000000270 ;
+    skos:prefLabel "Adonis lover of Aphrodite"@en .
+
+gd:W000019013.SR00000008 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000008 ;
+    dlp:involves gd:W000019013.C000000269,
+        gd:W000019013.C000000270 ;
+    skos:prefLabel "Aphrodite lover of Adonis"@en .
+
+gd:W000019014.SR00000001 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000011 ;
+    dlp:involves gd:W000019014.C000000256,
+        gd:W000019014.C000000262 ;
+    skos:prefLabel "Dionysus son of Zeus"@en .
+
+gd:W000019014.SR00000002 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000011 ;
+    dlp:involves gd:W000019014.C000000256,
+        gd:W000019014.C000000272 ;
+    skos:prefLabel "Dionysus son of Semele"@en .
+
+gd:W000019014.SR00000003 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000007 ;
+    dlp:involves gd:W000019014.C000000256,
+        gd:W000019014.C000000262 ;
+    skos:prefLabel "Zeus father of Dionysus"@en .
+
+gd:W000019014.SR00000004 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000008 ;
+    dlp:involves gd:W000019014.C000000262,
+        gd:W000019014.C000000272 ;
+    skos:prefLabel "Zeus lover of Semele"@en .
+
+gd:W000019014.SR00000005 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000006 ;
+    dlp:involves gd:W000019014.C000000256,
+        gd:W000019014.C000000272 ;
+    skos:prefLabel "Semele mother of Dionysus"@en .
+
+gd:W000019014.SR00000006 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000008 ;
+    dlp:involves gd:W000019014.C000000262,
+        gd:W000019014.C000000272 ;
+    skos:prefLabel "Semele lover of Zeus"@en .
+
+gd:W000019015.SR00000001 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000012 ;
+    dlp:involves gd:W000019015.C000000273,
+        gd:W000019015.C000000275 ;
+    skos:prefLabel "Leuce beloved of Hades"@en .
+
+gd:W000019015.SR00000002 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000008 ;
+    dlp:involves gd:W000019015.C000000273,
+        gd:W000019015.C000000275 ;
+    skos:prefLabel "Hades lover of Leuce"@en .
+
+gd:W000019016.SR00000001 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000013 ;
+    dlp:involves gd:W000019016.C000000276,
+        gd:W000019016.C000000277 ;
+    skos:prefLabel "Teucer uncle of Eurysaces"@en .
+
+gd:W000019016.SR00000002 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000009 ;
+    dlp:involves gd:W000019016.C000000276,
+        gd:W000019016.C000000278 ;
+    skos:prefLabel "Teucer half-brother of Ajax"@en .
+
+gd:W000019016.SR00000003 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000014 ;
+    dlp:involves gd:W000019016.C000000276,
+        gd:W000019016.C000000277 ;
+    skos:prefLabel "Eurysaces nephew of Teucer"@en .
+
+gd:W000019016.SR00000004 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000011 ;
+    dlp:involves gd:W000019016.C000000277,
+        gd:W000019016.C000000278 ;
+    skos:prefLabel "Eurysaces son of Ajax"@en .
+
+gd:W000019016.SR00000005 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000009 ;
+    dlp:involves gd:W000019016.C000000276,
+        gd:W000019016.C000000278 ;
+    skos:prefLabel "Ajax brother of Teucer"@en .
+
+gd:W000019016.SR00000006 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000007 ;
+    dlp:involves gd:W000019016.C000000277,
+        gd:W000019016.C000000278 ;
+    skos:prefLabel "Ajax father of Eurysaces"@en .
+
+gd:W000019017.SR00000001 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000008 ;
+    dlp:involves gd:W000019017.C000000264,
+        gd:W000019017.C000000274 ;
+    skos:prefLabel "Hector lover of Paris"@en .
+
+gd:W000019017.SR00000002 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000015 ;
+    dlp:involves gd:W000019017.C000000266,
+        gd:W000019017.C000000279 ;
+    skos:prefLabel "Achilles closest companion of Patroclus"@en .
+
+gd:W000019017.SR00000003 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000008 ;
+    dlp:involves gd:W000019017.C000000264,
+        gd:W000019017.C000000274 ;
+    skos:prefLabel "Paris lover of Hector"@en .
+
+gd:W000019017.SR00000004 a gc:G4_Social_Relationship ;
+    dlp:d-uses gd:RR00000015 ;
+    dlp:involves gd:W000019017.C000000266,
+        gd:W000019017.C000000279 ;
+    skos:prefLabel "Patroclus closest companion of Achilles"@en .
+
+gt:T000000011 a crm:E55_Type ;
+    crm:P127i_has_narrower_term gt:T000000004,
+        gt:T000000005,
+        gt:T000000006 ;
+    skos:prefLabel "Type of Character Feature"@en .
+
+gd:RR00000012 a gc:G6_Relationship_Role ;
+    crm:P2_has_type gt:T000000007 ;
+    skos:prefLabel "beloved"@en .
+
+gd:RR00000014 a gc:G6_Relationship_Role ;
+    crm:P2_has_type gt:T000000008 ;
+    skos:prefLabel "nephew"@en .
+
+gd:W000019008.C000000257 dlp:plays gd:RR00000004 .
+
+gd:RR00000001 a gc:G6_Relationship_Role ;
+    crm:P2_has_type gt:T000000007 ;
+    skos:prefLabel "husband"@en .
+
+gd:RR00000004 a gc:G6_Relationship_Role ;
+    crm:P2_has_type gt:T000000010 ;
+    skos:prefLabel "follower"@en .
+
+gd:RR00000010 a gc:G6_Relationship_Role ;
+    crm:P2_has_type gt:T000000008 ;
+    skos:prefLabel "grandfather"@en .
+
+gd:RR00000013 a gc:G6_Relationship_Role ;
+    crm:P2_has_type gt:T000000008 ;
+    skos:prefLabel "uncle"@en .
+
+gd:W000019008.C000000255 dlp:plays gd:RR00000002 .
+
+gd:W000019008.C000000256 dlp:plays gd:RR00000003 .
+
+gd:W000019010.C000000261 dlp:plays gd:RR00000006 .
+
+gd:W000019010.C000000262 dlp:plays gd:RR00000007 .
+
+gd:W000019011.C000000263 dlp:plays gd:RR00000008 .
+
+gd:W000019011.C000000274 dlp:plays gd:RR00000008 .
+
+gd:W000019012.C000000264 dlp:plays gd:RR00000009 .
+
+gd:W000019012.C000000265 dlp:plays gd:RR00000002 .
+
+gd:W000019013.C000000270 dlp:plays gd:RR00000008 .
+
+gd:W000019015.C000000275 dlp:plays gd:RR00000008 .
+
+gd:W000019017.C000000264 dlp:plays gd:RR00000008 .
+
+gd:W000019017.C000000266 dlp:plays gd:RR00000015 .
+
+gd:W000019017.C000000274 dlp:plays gd:RR00000008 .
+
+gd:W000019017.C000000279 dlp:plays gd:RR00000015 .
+
+gt:T000000009 a crm:E55_Type ;
+    crm:P127_has_broader_term gt:T000000012 ;
+    skos:prefLabel "antagonistic relationship"@en .
+
+gd:RR00000003 a gc:G6_Relationship_Role ;
+    crm:P2_has_type gt:T000000009 ;
+    skos:prefLabel "enemy"@en .
+
+gd:RR00000005 a gc:G6_Relationship_Role ;
+    crm:P2_has_type gt:T000000008 ;
+    skos:prefLabel "daughter"@en .
+
+gd:W000019008.C000000254 dlp:plays gd:RR00000001,
+        gd:RR00000003 .
+
+gt:T000000010 a crm:E55_Type ;
+    crm:P127_has_broader_term gt:T000000012 ;
+    skos:prefLabel "social relationship"@en .
+
+gd:RR00000002 a gc:G6_Relationship_Role ;
+    crm:P2_has_type gt:T000000007 ;
+    skos:prefLabel "wife"@en .
+
+gd:RR00000015 a gc:G6_Relationship_Role ;
+    crm:P2_has_type gt:T000000010 ;
+    skos:prefLabel "companion"@en .
+
+gd:W000019012.C000000274 dlp:plays gd:RR00000008,
+        gd:RR00000009 .
+
+gd:W000019013.C000000267 dlp:plays gd:RR00000006 .
+
+gd:W000019013.C000000268 dlp:plays gd:RR00000007,
+        gd:RR00000010 .
+
+gd:W000019014.C000000262 dlp:plays gd:RR00000007,
+        gd:RR00000008 .
+
+gd:W000019014.C000000272 dlp:plays gd:RR00000006,
+        gd:RR00000008 .
+
+gd:W000019016.C000000276 dlp:plays gd:RR00000009,
+        gd:RR00000013 .
+
+gd:W000019016.C000000277 dlp:plays gd:RR00000011 .
+
+gd:W000019016.C000000278 dlp:plays gd:RR00000007 .
+
+gt:T000000012 a crm:E55_Type ;
+    crm:P127i_has_narrower_term gt:T000000007,
+        gt:T000000008,
+        gt:T000000009,
+        gt:T000000010 ;
+    skos:prefLabel "Type of Character Relationship"@en .
+
+gt:T000000007 a crm:E55_Type ;
+    crm:P127_has_broader_term gt:T000000012 ;
+    skos:prefLabel "romantic/erotic relationship"@en .
+
+gd:RR00000006 a gc:G6_Relationship_Role ;
+    crm:P2_has_type gt:T000000008 ;
+    skos:prefLabel "mother"@en .
+
+gd:RR00000011 a gc:G6_Relationship_Role ;
+    crm:P2_has_type gt:T000000008 ;
+    skos:prefLabel "son"@en .
+
+gd:W000019013.C000000269 dlp:plays gd:RR00000008 .
+
+gd:RR00000009 a gc:G6_Relationship_Role ;
+    crm:P2_has_type gt:T000000008 ;
+    skos:prefLabel "brother"@en .
+
+gd:RR00000007 a gc:G6_Relationship_Role ;
+    crm:P2_has_type gt:T000000008 ;
+    skos:prefLabel "father"@en .
+
+gt:T000000008 a crm:E55_Type ;
+    crm:P127_has_broader_term gt:T000000012 ;
+    skos:prefLabel "familial relationship"@en .
+
+gd:RR00000008 a gc:G6_Relationship_Role ;
+    crm:P2_has_type gt:T000000007 ;
+    skos:prefLabel "lover"@en .
+
