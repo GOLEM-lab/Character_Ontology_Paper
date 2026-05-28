@@ -30,18 +30,19 @@ The paper introduces the Character Module with evaluation using Competency Quesi
 🔗 **Ontology Resources**:
 - [GOLEM Main Repository](https://github.com/GOLEM-lab/golem-ontology)
 - [SPARQL Endpoint](http://graph.golemlab.eu:8890/sparql)
-- [Case Study Knowledge Graph](https://golemlab.eu/graph/Greek10_Example)
+- [Case Study Knowledge Graph]([https://golemlab.eu/graph/Greek10_Example](https://golemlab.eu/graph/Greek10_Character_Module_Demo))
 
 ## 📂 Repository Structure
 ```text
 Character_Ontology_Paper/
 ├── CaseStudy_ttl/            # RDF datasets for case study
+├── Controlled_vocabulary/           # Controlled Vocabulary RDF datasets
 ├── CQ-SPARQL-updated                 # Competency questions & queries
 └── README.md                 # This file
 ```
 
 ## 🏗️ How to Use
-1. Explore the CaseStudy_ttl
+1. Explore the CaseStudy_ttl and Controlled_vocabulary
 2. Run SPARQL queries from CQ-SPARQL at our endpoint
 3. Refer to the [GOLEM documentation](https://github.com/GOLEM-lab/golem-ontology) for ontology details
 
