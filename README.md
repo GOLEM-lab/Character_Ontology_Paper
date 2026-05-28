@@ -29,8 +29,8 @@ The paper introduces the Character Module with evaluation using Competency Quesi
    
 🔗 **Ontology Resources**:
 - [GOLEM Main Repository](https://github.com/GOLEM-lab/golem-ontology)
-- [SPARQL Endpoint](http://graph.golemlab.eu:8890/sparql)
-- [Case Study Knowledge Graph]([https://golemlab.eu/graph/Greek10_Example](https://golemlab.eu/graph/Greek10_Character_Module_Demo))
+- SPARQL Endpoint: http://graph.golemlab.eu:8890/sparql
+- Case Study Knowledge Graph: https://golemlab.eu/graph/Greek10_Character_Module_Demo
 
 ## 📂 Repository Structure
 ```text
