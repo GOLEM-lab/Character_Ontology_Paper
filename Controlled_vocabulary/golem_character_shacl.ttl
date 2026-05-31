@@ -1,0 +1,250 @@
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix gc:   <https://ontology.golemlab.eu/> .
+@prefix lrm:  <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix dlp:  <http://www.ontologydesignpatterns.org/ont/dlp/> .
+@prefix gt:   <https://data.golemlab.eu/entity/type/> .
+@prefix gd:   <https://data.golemlab.eu/entity/> .
+@prefix golem-sh: <https://ontology.golemlab.eu/shapes/> .
+
+# =============================================================
+# GOLEM Character Module — SHACL Validation Shapes
+# Version: 1.0
+# Covers: G0_Character-Stoff, G1_Character, G17_Character_Feature,
+#         G4_Social_Relationship, G6_Relationship_Role,
+#         G3_Psychological_State, crm:E55_Type vocabulary concepts
+# Note: Biography vocabulary concepts (gt:BIO*) are defined in a
+#       separate TTL file; load all vocabulary files together
+#       before running validation.
+# =============================================================
+
+
+# ---------------------------------------------------------------
+# 1. G0_Character-Stoff Shape
+#    - Must have at least one skos:prefLabel (language-tagged)
+#    - Must NOT carry gc:GP0_has_feature directly
+#      (features attach to G1_Character only)
+# ---------------------------------------------------------------
+
+golem-sh:G0CharacterStoffShape
+    a sh:NodeShape ;
+    sh:targetClass gc:G0_Character-Stoff ;
+    sh:name "G0_Character-Stoff shape" ;
+    sh:description "Validates abstract character identity nodes. Features must not be attached here." ;
+
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:minCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:message "A G0_Character-Stoff instance must have at least one skos:prefLabel with a language tag."
+    ] ;
+
+    sh:property [
+        sh:path gc:GP0_has_feature ;
+        sh:maxCount 0 ;
+        sh:message "gc:GP0_has_feature must not be used on G0_Character-Stoff. Features are attached to G1_Character instances only."
+    ] .
+
+
+# ---------------------------------------------------------------
+# 2. G1_Character Shape
+#    - Domain constraint: subject of gc:GP0_has_feature must be G1_Character
+#    - Must be linked to exactly one lrm:F1 work
+#    - Must reference at least one G0_Character-Stoff
+#    - Feature values must be G17_Character_Feature instances
+#    - Must have at least one skos:prefLabel
+# ---------------------------------------------------------------
+
+golem-sh:G1CharacterShape
+    a sh:NodeShape ;
+    sh:targetClass gc:G1_Character ;
+    sh:name "G1_Character shape" ;
+    sh:description "Validates work-specific character instantiations." ;
+
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:minCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:message "A G1_Character instance must have at least one skos:prefLabel with a language tag."
+    ] ;
+
+    sh:property [
+        sh:path gc:GP1_is_character_in ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class lrm:F1 ;
+        sh:message "A G1_Character instance must be linked to exactly one lrm:F1 work via gc:GP1_is_character_in."
+    ] ;
+
+    sh:property [
+        sh:path crm:P130_shows_features_of ;
+        sh:minCount 1 ;
+        sh:class gc:G0_Character-Stoff ;
+        sh:message "A G1_Character instance must reference at least one G0_Character-Stoff via crm:P130_shows_features_of."
+    ] ;
+
+    sh:property [
+        sh:path gc:GP0_has_feature ;
+        sh:class gc:G17_Character_Feature ;
+        sh:message "Values of gc:GP0_has_feature on G1_Character must be instances of G17_Character_Feature."
+    ] .
+
+
+# ---------------------------------------------------------------
+# 3. G17_Character_Feature Shape
+#    - Domain constraint: gc:GP0i_is_feature_of must point to G1_Character
+#    - Must have exactly one crm:P2_has_type (category concept)
+#    - Must have at least one skos:prefLabel (the raw extracted value)
+#    - skos:closeMatch, if present, must point to a crm:E55_Type
+#      (requires full vocabulary graph to be loaded for class check)
+# ---------------------------------------------------------------
+
+golem-sh:G17CharacterFeatureShape
+    a sh:NodeShape ;
+    sh:targetClass gc:G17_Character_Feature ;
+    sh:name "G17_Character_Feature shape" ;
+    sh:description "Validates character feature instances including domain, type, and label constraints." ;
+
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:minCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:message "A G17_Character_Feature instance must have at least one skos:prefLabel recording the extracted feature value."
+    ] ;
+
+    sh:property [
+        sh:path crm:P2_has_type ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class crm:E55_Type ;
+        sh:message "A G17_Character_Feature instance must have exactly one crm:P2_has_type pointing to a crm:E55_Type category concept."
+    ] ;
+
+    # Domain constraint: features must belong to a G1_Character
+    sh:property [
+        sh:path gc:GP0i_is_feature_of ;
+        sh:minCount 1 ;
+        sh:class gc:G1_Character ;
+        sh:message "A G17_Character_Feature instance must be linked to at least one G1_Character via gc:GP0i_is_feature_of."
+    ] .
+
+
+# ---------------------------------------------------------------
+# 4. crm:E55_Type Vocabulary Concept Shape
+#    - Hierarchy constraint: at most one broader term per concept
+#    - Datatype constraint: at least one language-tagged skos:prefLabel
+# ---------------------------------------------------------------
+
+golem-sh:E55TypeVocabularyShape
+    a sh:NodeShape ;
+    sh:targetClass crm:E55_Type ;
+    sh:name "crm:E55_Type vocabulary concept shape" ;
+    sh:description "Validates controlled vocabulary concepts for hierarchy integrity and label completeness." ;
+
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:minCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:message "Every crm:E55_Type vocabulary concept must have at least one skos:prefLabel with a language tag."
+    ] ;
+
+    sh:property [
+        sh:path crm:P127_has_broader_term ;
+        sh:maxCount 1 ;
+        sh:class crm:E55_Type ;
+        sh:message "A crm:E55_Type concept must have at most one crm:P127_has_broader_term pointing to a parent crm:E55_Type."
+    ] .
+
+
+# ---------------------------------------------------------------
+# 5. G4_Social_Relationship Shape
+#    - Participants via dlp:involves must be G1_Character instances
+#    - Must have at least one G6_Relationship_Role via dlp:d-uses
+#    - Must have at least one crm:P2_has_type for the relationship category
+# ---------------------------------------------------------------
+
+golem-sh:G4SocialRelationshipShape
+    a sh:NodeShape ;
+    sh:targetClass gc:G4_Social_Relationship ;
+    sh:name "G4_Social_Relationship shape" ;
+    sh:description "Validates social relationship instances including participant domain and role constraints." ;
+
+    sh:property [
+        sh:path dlp:involves ;
+        sh:minCount 2 ;
+        sh:class gc:G1_Character ;
+        sh:message "A G4_Social_Relationship must involve at least two G1_Character instances via dlp:involves."
+    ] ;
+
+    sh:property [
+        sh:path dlp:d-uses ;
+        sh:minCount 1 ;
+        sh:class gc:G6_Relationship_Role ;
+        sh:message "A G4_Social_Relationship must employ at least one G6_Relationship_Role via dlp:d-uses."
+    ] ;
+
+    sh:property [
+        sh:path crm:P2_has_type ;
+        sh:minCount 1 ;
+        sh:class crm:E55_Type ;
+        sh:message "A G4_Social_Relationship must have at least one crm:P2_has_type pointing to a relationship category concept."
+    ] .
+
+
+# ---------------------------------------------------------------
+# 6. G6_Relationship_Role Shape
+#    - Must have at least one crm:P2_has_type specifying the role type
+#    - Must have at least one skos:prefLabel
+# ---------------------------------------------------------------
+
+golem-sh:G6RelationshipRoleShape
+    a sh:NodeShape ;
+    sh:targetClass gc:G6_Relationship_Role ;
+    sh:name "G6_Relationship_Role shape" ;
+    sh:description "Validates relationship role instances." ;
+
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:minCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:message "A G6_Relationship_Role instance must have at least one skos:prefLabel."
+    ] ;
+
+    sh:property [
+        sh:path crm:P2_has_type ;
+        sh:minCount 1 ;
+        sh:class crm:E55_Type ;
+        sh:message "A G6_Relationship_Role instance must have at least one crm:P2_has_type pointing to a role type concept."
+    ] .
+
+
+# ---------------------------------------------------------------
+# 7. G3_Psychological_State Shape
+#    - Must have at least one crm:P2_has_type (psychological state type)
+#    - Must have at least one skos:prefLabel
+# ---------------------------------------------------------------
+
+golem-sh:G3PsychologicalStateShape
+    a sh:NodeShape ;
+    sh:targetClass gc:G3_Psychological_State ;
+    sh:name "G3_Psychological_State shape" ;
+    sh:description "Validates transient psychological state instances inferred from narrative events." ;
+
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:minCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:message "A G3_Psychological_State instance must have at least one skos:prefLabel."
+    ] ;
+
+    sh:property [
+        sh:path crm:P2_has_type ;
+        sh:minCount 1 ;
+        sh:class crm:E55_Type ;
+        sh:message "A G3_Psychological_State instance must have at least one crm:P2_has_type pointing to a psychological state type concept."
+    ] .
