@@ -37,6 +37,7 @@ The paper introduces the Character Module with evaluation using Competency Quesi
 Character_Ontology_Paper/
 ├── CaseStudy_ttl/            # RDF datasets for case study
 ├── Controlled_vocabulary/           # Controlled Vocabulary RDF datasets
+├── Wikidata/           # Controlled Vocabulary Source Data
 ├── CQ-SPARQL-updated                 # Competency questions & queries
 └── README.md                 # This file
 ```
