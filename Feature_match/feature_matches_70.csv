@@ -1,0 +1,127 @@
+source_file,feature_label,feature_category,matched_label,matched_category,matched_uri,similarity
+Character_RDF_final_updated_updated.ttl,male,Unknown,female,Biography,gt:BIOGE00004,0.7337931394577026
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,musician,Unknown,classical musician,Biography,gt:BIOOC00492,0.8100009560585022
+Character_RDF_final_updated_updated.ttl,musician,Unknown,electronic musician,Biography,gt:BIOOC00736,0.8162683844566345
+Character_RDF_final_updated_updated.ttl,musician,Unknown,guitarist,Biography,gt:BIOOC00934,0.8000990748405457
+Character_RDF_final_updated_updated.ttl,musician,Unknown,hip-hop musician,Biography,gt:BIOOC00988,0.7443289756774902
+Character_RDF_final_updated_updated.ttl,musician,Unknown,jazz musician,Biography,gt:BIOOC01075,0.7723519802093506
+Character_RDF_final_updated_updated.ttl,musician,Unknown,multi-instrumentalist,Biography,gt:BIOOC01302,0.7376401424407959
+Character_RDF_final_updated_updated.ttl,musician,Unknown,music artist,Biography,gt:BIOOC01306,0.7704623937606812
+Character_RDF_final_updated_updated.ttl,musician,Unknown,musician,Biography,gt:BIOOC01314,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,musician,Unknown,pianist,Biography,gt:BIOOC01463,0.7162929177284241
+Character_RDF_final_updated_updated.ttl,musician,Unknown,rock musician,Biography,gt:BIOOC01673,0.8371616005897522
+Character_RDF_final_updated_updated.ttl,female,Unknown,Gender,Biography,gt:BIOGE00000,0.7189262509346008
+Character_RDF_final_updated_updated.ttl,female,Unknown,female,Biography,gt:BIOGE00004,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,female,Unknown,male,Biography,gt:BIOGE00016,0.7337932586669922
+Character_RDF_final_updated_updated.ttl,male,Unknown,female,Biography,gt:BIOGE00004,0.7337931394577026
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,male,Unknown,female,Biography,gt:BIOGE00004,0.7337931394577026
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,violent,Unknown,Violent (Personality),Psychological Description,gt:PSYPE00064,0.7656422853469849
+Character_RDF_final_updated_updated.ttl,female,Unknown,Gender,Biography,gt:BIOGE00000,0.7189262509346008
+Character_RDF_final_updated_updated.ttl,female,Unknown,female,Biography,gt:BIOGE00004,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,female,Unknown,male,Biography,gt:BIOGE00016,0.7337932586669922
+Character_RDF_final_updated_updated.ttl,wet hair,Unknown,Hair,Physical Description,gt:PHYHA00000,0.7645540833473206
+Character_RDF_final_updated_updated.ttl,female,Unknown,Gender,Biography,gt:BIOGE00000,0.7189262509346008
+Character_RDF_final_updated_updated.ttl,female,Unknown,female,Biography,gt:BIOGE00004,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,female,Unknown,male,Biography,gt:BIOGE00016,0.7337932586669922
+Character_RDF_final_updated_updated.ttl,female,Unknown,Gender,Biography,gt:BIOGE00000,0.7189262509346008
+Character_RDF_final_updated_updated.ttl,female,Unknown,female,Biography,gt:BIOGE00004,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,female,Unknown,male,Biography,gt:BIOGE00016,0.7337932586669922
+Character_RDF_final_updated_updated.ttl,wild curly hair,Unknown,Curly (Hair),Physical Description,gt:PHYHA00057,0.8216805458068848
+Character_RDF_final_updated_updated.ttl,rebellious,Unknown,Rebellious (Personality),Psychological Description,gt:PSYPE00124,0.8836442232131958
+Character_RDF_final_updated_updated.ttl,female,Unknown,Gender,Biography,gt:BIOGE00000,0.7189262509346008
+Character_RDF_final_updated_updated.ttl,female,Unknown,female,Biography,gt:BIOGE00004,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,female,Unknown,male,Biography,gt:BIOGE00016,0.7337932586669922
+Character_RDF_final_updated_updated.ttl,male,Unknown,female,Biography,gt:BIOGE00004,0.7337931394577026
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,king of the gods,Unknown,king,Biography,gt:BIOOC01109,0.7161189317703247
+Character_RDF_final_updated_updated.ttl,king of the gods,Unknown,mythological king,Biography,gt:BIOOC01320,0.8119102716445923
+Character_RDF_final_updated_updated.ttl,manipulative,Unknown,Manipulative (Personality),Psychological Description,gt:PSYPE00016,0.8817147016525269
+Character_RDF_final_updated_updated.ttl,female,Unknown,Gender,Biography,gt:BIOGE00000,0.7189262509346008
+Character_RDF_final_updated_updated.ttl,female,Unknown,female,Biography,gt:BIOGE00004,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,female,Unknown,male,Biography,gt:BIOGE00016,0.7337932586669922
+Character_RDF_final_updated_updated.ttl,male,Unknown,female,Biography,gt:BIOGE00004,0.7337931394577026
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,prince of Troy,Unknown,prince,Biography,gt:BIOOC01535,0.7033113241195679
+Character_RDF_final_updated_updated.ttl,naive,Unknown,Naive (Personality),Psychological Description,gt:PSYPE00047,0.7179732918739319
+Character_RDF_final_updated_updated.ttl,male,Unknown,female,Biography,gt:BIOGE00004,0.7337931394577026
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,prince of Troy,Unknown,prince,Biography,gt:BIOOC01535,0.7033113241195679
+Character_RDF_final_updated_updated.ttl,noble warrior,Unknown,warrior,Biography,gt:BIOOC02075,0.7776057720184326
+Character_RDF_final_updated_updated.ttl,noble warrior,Unknown,warrior monk,Biography,gt:BIOOC02076,0.7060015797615051
+Character_RDF_final_updated_updated.ttl,honorable,Unknown,Honorable (Personality),Psychological Description,gt:PSYPE00091,0.7992733120918274
+Character_RDF_final_updated_updated.ttl,male,Unknown,female,Biography,gt:BIOGE00004,0.7337931394577026
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,prince of Troy,Unknown,prince,Biography,gt:BIOOC01535,0.7033113241195679
+Character_RDF_final_updated_updated.ttl,female,Unknown,Gender,Biography,gt:BIOGE00000,0.7189262509346008
+Character_RDF_final_updated_updated.ttl,female,Unknown,female,Biography,gt:BIOGE00004,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,female,Unknown,male,Biography,gt:BIOGE00016,0.7337932586669922
+Character_RDF_final_updated_updated.ttl,queen of Sparta,Unknown,Sparta,Biography,gt:BIONA00387,0.797463595867157
+Character_RDF_final_updated_updated.ttl,male,Unknown,female,Biography,gt:BIOGE00004,0.7337931394577026
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,female,Unknown,Gender,Biography,gt:BIOGE00000,0.7189262509346008
+Character_RDF_final_updated_updated.ttl,female,Unknown,female,Biography,gt:BIOGE00004,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,female,Unknown,male,Biography,gt:BIOGE00016,0.7337932586669922
+Character_RDF_final_updated_updated.ttl,princess,Unknown,princess,Biography,gt:BIOOC01536,1.000000238418579
+Character_RDF_final_updated_updated.ttl,male,Unknown,female,Biography,gt:BIOGE00004,0.7337931394577026
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,king,Unknown,fictional king,Biography,gt:BIOOC00810,0.7584401369094849
+Character_RDF_final_updated_updated.ttl,king,Unknown,king,Biography,gt:BIOOC01109,1.000000238418579
+Character_RDF_final_updated_updated.ttl,king,Unknown,monarch,Biography,gt:BIOOC01284,0.7360190153121948
+Character_RDF_final_updated_updated.ttl,male,Unknown,female,Biography,gt:BIOGE00004,0.7337931394577026
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,female,Unknown,Gender,Biography,gt:BIOGE00000,0.7189262509346008
+Character_RDF_final_updated_updated.ttl,female,Unknown,female,Biography,gt:BIOGE00004,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,female,Unknown,male,Biography,gt:BIOGE00016,0.7337932586669922
+Character_RDF_final_updated_updated.ttl,possessive,Unknown,Possessive (Personality),Psychological Description,gt:PSYPE00066,0.7912088632583618
+Character_RDF_final_updated_updated.ttl,female,Unknown,Gender,Biography,gt:BIOGE00000,0.7189262509346008
+Character_RDF_final_updated_updated.ttl,female,Unknown,female,Biography,gt:BIOGE00004,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,female,Unknown,male,Biography,gt:BIOGE00016,0.7337932586669922
+Character_RDF_final_updated_updated.ttl,mortal princess,Unknown,princess,Biography,gt:BIOOC01536,0.7347298860549927
+Character_RDF_final_updated_updated.ttl,male,Unknown,female,Biography,gt:BIOGE00004,0.7337931394577026
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,king of gods,Unknown,king,Biography,gt:BIOOC01109,0.7211363911628723
+Character_RDF_final_updated_updated.ttl,king of gods,Unknown,mythological king,Biography,gt:BIOOC01320,0.8257519006729126
+Character_RDF_final_updated_updated.ttl,male,Unknown,female,Biography,gt:BIOGE00004,0.7337931394577026
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,female,Unknown,Gender,Biography,gt:BIOGE00000,0.7189262509346008
+Character_RDF_final_updated_updated.ttl,female,Unknown,female,Biography,gt:BIOGE00004,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,female,Unknown,male,Biography,gt:BIOGE00016,0.7337932586669922
+Character_RDF_final_updated_updated.ttl,sapling,Unknown,sapper,Biography,gt:BIOOC01698,0.7438141703605652
+Character_RDF_final_updated_updated.ttl,male,Unknown,female,Biography,gt:BIOGE00004,0.7337931394577026
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,male,Unknown,female,Biography,gt:BIOGE00004,0.7337931394577026
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,skilled archer,Unknown,archer,Biography,gt:BIOOC00213,0.7937250137329102
+Character_RDF_final_updated_updated.ttl,skilled archer,Unknown,archer,Biography,gt:BIOOC00214,0.7937250137329102
+Character_RDF_final_updated_updated.ttl,protective,Unknown,Protective (Personality),Psychological Description,gt:PSYPE00036,0.7905038595199585
+Character_RDF_final_updated_updated.ttl,male,Unknown,female,Biography,gt:BIOGE00004,0.7337931394577026
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,curly hair,Unknown,Hair,Physical Description,gt:PHYHA00000,0.7586309313774109
+Character_RDF_final_updated_updated.ttl,curly hair,Unknown,Wavy (Hair),Physical Description,gt:PHYHA00001,0.7177624702453613
+Character_RDF_final_updated_updated.ttl,curly hair,Unknown,Straight (Hair),Physical Description,gt:PHYHA00032,0.7154524326324463
+Character_RDF_final_updated_updated.ttl,curly hair,Unknown,Curly (Hair),Physical Description,gt:PHYHA00057,0.9581547975540161
+Character_RDF_final_updated_updated.ttl,male,Unknown,female,Biography,gt:BIOGE00004,0.7337931394577026
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,legendary warrior,Unknown,warrior,Biography,gt:BIOOC02075,0.804804265499115
+Character_RDF_final_updated_updated.ttl,male,Unknown,female,Biography,gt:BIOGE00004,0.7337931394577026
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,prince of Troy,Unknown,prince,Biography,gt:BIOOC01535,0.7033113241195679
+Character_RDF_final_updated_updated.ttl,warrior,Unknown,warrior,Biography,gt:BIOOC02075,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,warrior,Unknown,warrior monk,Biography,gt:BIOOC02076,0.7790138721466064
+Character_RDF_final_updated_updated.ttl,male,Unknown,female,Biography,gt:BIOGE00004,0.7337931394577026
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,prince of Troy,Unknown,prince,Biography,gt:BIOOC01535,0.7033113241195679
+Character_RDF_final_updated_updated.ttl,male,Unknown,female,Biography,gt:BIOGE00004,0.7337931394577026
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,Greek warrior,Unknown,warrior,Biography,gt:BIOOC02075,0.7235247492790222
+Character_RDF_final_updated_updated.ttl,male,Unknown,female,Biography,gt:BIOGE00004,0.7337931394577026
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Canon_RDF_final_updated.ttl,prince of Troy,Unknown,prince,Biography,gt:BIOOC01535,0.7033113241195679
+Canon_RDF_final_updated.ttl,brave,Unknown,Brave (Personality),Psychological Description,gt:PSYPE00096,0.7818955183029175
+Canon_RDF_final_updated.ttl,blonde hair,Unknown,Hair,Physical Description,gt:PHYHA00000,0.8009214401245117
+Canon_RDF_final_updated.ttl,blonde hair,Unknown,Blond (Hair),Physical Description,gt:PHYHA00006,0.8763514757156372
+Canon_RDF_final_updated.ttl,blonde hair,Unknown,Dyed (Hair),Physical Description,gt:PHYHA00051,0.7290389537811279
+Canon_RDF_final_updated.ttl,blonde hair,Unknown,Hair Color (Hair),Physical Description,gt:PHYHA00119,0.7398145794868469

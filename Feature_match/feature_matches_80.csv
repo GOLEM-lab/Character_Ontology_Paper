@@ -1,0 +1,49 @@
+source_file,feature_label,feature_category,matched_label,matched_category,matched_uri,similarity
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,musician,Unknown,classical musician,Biography,gt:BIOOC00492,0.8100009560585022
+Character_RDF_final_updated_updated.ttl,musician,Unknown,electronic musician,Biography,gt:BIOOC00736,0.8162683844566345
+Character_RDF_final_updated_updated.ttl,musician,Unknown,guitarist,Biography,gt:BIOOC00934,0.8000990748405457
+Character_RDF_final_updated_updated.ttl,musician,Unknown,musician,Biography,gt:BIOOC01314,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,musician,Unknown,rock musician,Biography,gt:BIOOC01673,0.8371616005897522
+Character_RDF_final_updated_updated.ttl,female,Unknown,female,Biography,gt:BIOGE00004,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,female,Unknown,female,Biography,gt:BIOGE00004,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,female,Unknown,female,Biography,gt:BIOGE00004,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,female,Unknown,female,Biography,gt:BIOGE00004,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,wild curly hair,Unknown,Curly (Hair),Physical Description,gt:PHYHA00057,0.8216805458068848
+Character_RDF_final_updated_updated.ttl,rebellious,Unknown,Rebellious (Personality),Psychological Description,gt:PSYPE00124,0.8836442232131958
+Character_RDF_final_updated_updated.ttl,female,Unknown,female,Biography,gt:BIOGE00004,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,king of the gods,Unknown,mythological king,Biography,gt:BIOOC01320,0.8119102716445923
+Character_RDF_final_updated_updated.ttl,manipulative,Unknown,Manipulative (Personality),Psychological Description,gt:PSYPE00016,0.8817147016525269
+Character_RDF_final_updated_updated.ttl,female,Unknown,female,Biography,gt:BIOGE00004,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,female,Unknown,female,Biography,gt:BIOGE00004,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,female,Unknown,female,Biography,gt:BIOGE00004,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,princess,Unknown,princess,Biography,gt:BIOOC01536,1.000000238418579
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,king,Unknown,king,Biography,gt:BIOOC01109,1.000000238418579
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,female,Unknown,female,Biography,gt:BIOGE00004,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,female,Unknown,female,Biography,gt:BIOGE00004,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,king of gods,Unknown,mythological king,Biography,gt:BIOOC01320,0.8257519006729126
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,female,Unknown,female,Biography,gt:BIOGE00004,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,curly hair,Unknown,Curly (Hair),Physical Description,gt:PHYHA00057,0.9581547975540161
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,legendary warrior,Unknown,warrior,Biography,gt:BIOOC02075,0.804804265499115
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,warrior,Unknown,warrior,Biography,gt:BIOOC02075,1.0000001192092896
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Character_RDF_final_updated_updated.ttl,male,Unknown,male,Biography,gt:BIOGE00016,1.0
+Canon_RDF_final_updated.ttl,blonde hair,Unknown,Hair,Physical Description,gt:PHYHA00000,0.8009214401245117
+Canon_RDF_final_updated.ttl,blonde hair,Unknown,Blond (Hair),Physical Description,gt:PHYHA00006,0.8763514757156372
