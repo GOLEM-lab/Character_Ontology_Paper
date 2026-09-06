@@ -1481,7 +1481,7 @@ gt:T000000014 a crm:E55_Type .
 gt:T000000014 skos:prefLabel "fanFiction"@en .
 
 gt:T000000015 a crm:E55_Type .
-gt:T000000015 skos:prefLabel "originalCharacter"@en .
+gt:T000000015 skos:prefLabel "canonicalCharacter"@en .
 
 gt:T000000016 a crm:E55_Type .
 gt:T000000016 skos:prefLabel "fanfictionCharacter"@en .
